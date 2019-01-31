@@ -1,7 +1,7 @@
 # Avoid clash with a variable named `slots' in a Quartz header
 CONFIG += no_keywords
 
-TARGET = qqt7engine
+TARGET = qqt7engine531V3-WCE6
 QT += multimedia-private network
 qtHaveModule(widgets) {
     QT += multimediawidgets-private widgets

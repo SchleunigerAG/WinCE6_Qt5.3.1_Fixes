@@ -1,4 +1,4 @@
-TARGET  = qtaccessiblewidgets
+TARGET  = qtaccessiblewidgets531V3-WCE6
 
 PLUGIN_TYPE = accessible
 PLUGIN_EXTENDS = widgets

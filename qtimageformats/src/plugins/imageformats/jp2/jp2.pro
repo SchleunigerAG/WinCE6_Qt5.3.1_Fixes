@@ -1,4 +1,4 @@
-TARGET  = qjp2
+TARGET  = qjp2531V3-WCE6
 
 PLUGIN_TYPE = imageformats
 PLUGIN_CLASS_NAME = QJp2Plugin

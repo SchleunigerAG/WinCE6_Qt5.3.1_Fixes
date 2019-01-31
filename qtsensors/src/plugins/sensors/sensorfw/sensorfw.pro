@@ -1,4 +1,4 @@
-TARGET = qtsensors_sensorfw
+TARGET = qtsensors_sensorfw531V3-WCE6
 QT = core sensors network dbus
 
 PLUGIN_TYPE = sensors

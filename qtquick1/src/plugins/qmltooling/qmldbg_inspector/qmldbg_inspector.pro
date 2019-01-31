@@ -1,4 +1,4 @@
-TARGET = qmldbg_inspector
+TARGET = qmldbg_inspector531V3-WCE6
 QT       += declarative declarative-private gui widgets core-private
 
 PLUGIN_TYPE = qml1tooling

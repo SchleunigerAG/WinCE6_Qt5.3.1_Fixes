@@ -1,4 +1,4 @@
-TARGET  = qjpeg
+TARGET  = qjpeg531V3-WCE6
 
 PLUGIN_TYPE = imageformats
 PLUGIN_CLASS_NAME = QJpegPlugin

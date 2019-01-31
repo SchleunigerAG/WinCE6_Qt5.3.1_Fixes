@@ -1,4 +1,4 @@
-TARGET = qtgeoservices_osm
+TARGET = qtgeoservices_osm531V3-WCE6
 QT += location-private positioning-private network
 
 PLUGIN_TYPE = geoservices

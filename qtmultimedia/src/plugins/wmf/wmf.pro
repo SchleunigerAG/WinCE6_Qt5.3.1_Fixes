@@ -1,4 +1,4 @@
-TARGET = wmfengine
+TARGET = wmfengine531V3-WCE6
 QT += multimedia-private network
 qtHaveModule(widgets) {
     QT += multimediawidgets-private

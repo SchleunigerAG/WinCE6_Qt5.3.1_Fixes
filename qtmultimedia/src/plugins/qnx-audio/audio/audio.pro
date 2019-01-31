@@ -1,4 +1,4 @@
-TARGET = qtmedia_qnx_audio
+TARGET = qtmedia_qnx_audio531V3-WCE6
 QT += multimedia-private
 CONFIG += no_private_qt_headers_warning
 

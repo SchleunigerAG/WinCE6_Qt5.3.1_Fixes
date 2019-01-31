@@ -1,4 +1,4 @@
-TARGET = qtposition_simulator
+TARGET = qtposition_simulator531V3-WCE6
 QT = core network positioning
 
 PLUGIN_TYPE = position

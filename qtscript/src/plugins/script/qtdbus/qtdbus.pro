@@ -1,4 +1,4 @@
-TARGET  = qtscriptdbus
+TARGET  = qtscriptdbus531V3-WCE6
 
 PLUGIN_TYPE = script
 PLUGIN_CLASS_NAME = QtDBusScriptPlugin

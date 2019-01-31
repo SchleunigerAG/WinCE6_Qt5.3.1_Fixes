@@ -1,4 +1,4 @@
-TARGET = gstcamerabin
+TARGET = gstcamerabin531V3-WCE6
 
 QT += multimedia-private
 

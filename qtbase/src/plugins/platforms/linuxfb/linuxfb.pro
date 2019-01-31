@@ -1,4 +1,4 @@
-TARGET = qlinuxfb
+TARGET = qlinuxfb531V3-WCE6
 
 PLUGIN_TYPE = platforms
 PLUGIN_CLASS_NAME = QLinuxFbIntegrationPlugin

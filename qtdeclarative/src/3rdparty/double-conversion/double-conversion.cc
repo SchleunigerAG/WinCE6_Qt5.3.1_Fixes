@@ -25,6 +25,10 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
+#define _CRT_BANNED_DEPRECATE( x )
+// CHANGES SCHLEUNIGER AG, April 2015 :: END
+
 #include <limits.h>
 #include <math.h>
 

@@ -39,6 +39,10 @@
 **
 ****************************************************************************/
 
+// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
+#define _CRT_BANNED_DEPRECATE( x )
+// CHANGES SCHLEUNIGER AG, April 2015 :: END
+
 #include "qv4isel_util_p.h"
 #include "qv4isel_moth_p.h"
 #include "qv4vme_moth_p.h"

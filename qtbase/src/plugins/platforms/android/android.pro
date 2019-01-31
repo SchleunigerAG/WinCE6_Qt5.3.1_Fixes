@@ -1,4 +1,4 @@
-TARGET = qtforandroid
+TARGET = qtforandroid531V3-WCE6
 
 PLUGIN_TYPE = platforms
 

@@ -1,4 +1,4 @@
-TARGET = qtposition_cl
+TARGET = qtposition_cl531V3-WCE6
 QT = core positioning
 
 PLUGIN_TYPE = position

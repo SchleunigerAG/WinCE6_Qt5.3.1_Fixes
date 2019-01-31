@@ -1,4 +1,4 @@
-TARGET = qminimalegl
+TARGET = qminimalegl531V3-WCE6
 
 PLUGIN_TYPE = platforms
 PLUGIN_CLASS_NAME = QMinimalEglIntegrationPlugin

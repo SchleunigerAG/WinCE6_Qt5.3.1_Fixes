@@ -1,4 +1,4 @@
-TARGET = qtsensors_ios
+TARGET = qtsensors_ios531V3-WCE6
 QT = core sensors
 
 PLUGIN_TYPE = sensors

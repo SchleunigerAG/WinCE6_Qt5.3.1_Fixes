@@ -1,4 +1,4 @@
-TARGET = qgenericbearer
+TARGET = qgenericbearer531V3-WCE6
 
 PLUGIN_TYPE = bearer
 PLUGIN_CLASS_NAME = QGenericEnginePlugin

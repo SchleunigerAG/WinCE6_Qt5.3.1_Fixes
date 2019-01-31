@@ -1,4 +1,4 @@
-TARGET = qtmedia_audioengine
+TARGET = qtmedia_audioengine531V3-WCE6
 QT += multimedia-private
 
 PLUGIN_TYPE=mediaservice

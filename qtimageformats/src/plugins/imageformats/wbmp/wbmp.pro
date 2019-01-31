@@ -1,4 +1,4 @@
-TARGET = qwbmp
+TARGET = qwbmp531V3-WCE6
 
 PLUGIN_TYPE = imageformats
 PLUGIN_CLASS_NAME = QWbmpPlugin

@@ -1,4 +1,4 @@
-TARGET = qtaudio_windows
+TARGET = qtaudio_windows531V3-WCE6
 QT += multimedia-private
 
 PLUGIN_TYPE = audio

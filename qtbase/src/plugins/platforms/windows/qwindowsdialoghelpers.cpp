@@ -76,6 +76,13 @@
 #include <shlobj.h>
 #include <shlwapi.h>
 
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifdef Q_OS_WINCE
+class IShellItem;
+class IShellItemArray;
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
+
 // #define USE_NATIVE_COLOR_DIALOG /* Testing purposes only */
 
 #ifdef Q_CC_MINGW  /* Add missing declarations for MinGW */
@@ -800,6 +807,8 @@ inline void QWindowsFileDialogSharedData::fromOptions(const QSharedPointer<QFile
 
 class QWindowsNativeFileDialogBase;
 
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
 class QWindowsNativeFileDialogEventHandler : public IFileDialogEvents
 {
 public:
@@ -857,6 +866,8 @@ IFileDialogEvents *QWindowsNativeFileDialogEventHandler::create(QWindowsNativeFi
     eventHandler->Release();
     return result;
 }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 
 /*!
     \class QWindowsNativeFileDialogBase
@@ -919,7 +930,11 @@ protected:
     explicit QWindowsNativeFileDialogBase(const QWindowsFileDialogSharedData &data);
     bool init(const CLSID &clsId, const IID &iid);
     void setDefaultSuffixSys(const QString &s);
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     inline IFileDialog * fileDialog() const { return m_fileDialog; }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     static QString itemPath(IShellItem *item);
     static QList<QUrl> libraryItemFolders(IShellItem *item);
     static QString libraryItemDefaultSaveFolder(IShellItem *item);
@@ -930,8 +945,12 @@ protected:
     QWindowsFileDialogSharedData &data() { return m_data; }
 
 private:
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     IFileDialog *m_fileDialog;
     IFileDialogEvents *m_dialogEvents;
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     DWORD m_cookie;
     QStringList m_nameFilters;
     bool m_hideFiltersDetails;
@@ -940,24 +959,39 @@ private:
     QString m_title;
 };
 
-QWindowsNativeFileDialogBase::QWindowsNativeFileDialogBase(const QWindowsFileDialogSharedData &data) :
-    m_fileDialog(0), m_dialogEvents(0), m_cookie(0), m_hideFiltersDetails(false),
-    m_hasDefaultSuffix(false), m_data(data)
+QWindowsNativeFileDialogBase::QWindowsNativeFileDialogBase(const QWindowsFileDialogSharedData &data)
+    : m_cookie(0)
+    , m_hideFiltersDetails(false)
+    , m_hasDefaultSuffix(false)
+    , m_data(data)
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
+    , m_fileDialog(0)
+    , m_dialogEvents(0)
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
+
 {
 }
 
 QWindowsNativeFileDialogBase::~QWindowsNativeFileDialogBase()
 {
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (m_dialogEvents && m_fileDialog)
         m_fileDialog->Unadvise(m_cookie);
     if (m_dialogEvents)
         m_dialogEvents->Release();
     if (m_fileDialog)
         m_fileDialog->Release();
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 bool QWindowsNativeFileDialogBase::init(const CLSID &clsId, const IID &iid)
 {
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     HRESULT hr = CoCreateInstance(clsId, NULL, CLSCTX_INPROC_SERVER,
                                   iid, reinterpret_cast<void **>(&m_fileDialog));
     if (FAILED(hr)) {
@@ -974,14 +1008,20 @@ bool QWindowsNativeFileDialogBase::init(const CLSID &clsId, const IID &iid)
         return false;
     }
     qCDebug(lcQpaDialogs) << __FUNCTION__ << m_fileDialog << m_dialogEvents <<  m_cookie;
-
     return true;
+#endif
+    return false;
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 void QWindowsNativeFileDialogBase::setWindowTitle(const QString &title)
 {
     m_title = title;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     m_fileDialog->SetTitle(reinterpret_cast<const wchar_t *>(title.utf16()));
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 IShellItem *QWindowsNativeFileDialogBase::shellItem(const QString &path)
@@ -1004,12 +1044,16 @@ IShellItem *QWindowsNativeFileDialogBase::shellItem(const QString &path)
 
 void QWindowsNativeFileDialogBase::setDirectory(const QString &directory)
 {
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (!directory.isEmpty()) {
         if (IShellItem *psi = QWindowsNativeFileDialogBase::shellItem(directory)) {
             m_fileDialog->SetFolder(psi);
             psi->Release();
         }
     }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 QString QWindowsNativeFileDialogBase::directory() const
@@ -1027,6 +1071,8 @@ void QWindowsNativeFileDialogBase::doExec(HWND owner)
     qCDebug(lcQpaDialogs) << '>' << __FUNCTION__;
     // Show() blocks until the user closes the dialog, the dialog window
     // gets a WM_CLOSE or the parent window is destroyed.
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     const HRESULT hr = m_fileDialog->Show(owner);
     QWindowsDialogs::eatMouseMove();
     qCDebug(lcQpaDialogs) << '<' << __FUNCTION__ << " returns " << hex << hr;
@@ -1035,12 +1081,16 @@ void QWindowsNativeFileDialogBase::doExec(HWND owner)
     } else {
         emit rejected();
     }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 void QWindowsNativeFileDialogBase::setMode(QFileDialogOptions::FileMode mode,
                                            QFileDialogOptions::AcceptMode acceptMode,
                                            QFileDialogOptions::FileDialogOptions options)
 {
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     DWORD flags = FOS_PATHMUSTEXIST | FOS_FORCESHOWHIDDEN;
     if (options & QFileDialogOptions::DontResolveSymlinks)
         flags |= FOS_NODEREFERENCELINKS;
@@ -1068,6 +1118,8 @@ void QWindowsNativeFileDialogBase::setMode(QFileDialogOptions::FileMode mode,
 
     if (FAILED(m_fileDialog->SetOptions(flags)))
         qErrnoWarning("%s: SetOptions() failed", __FUNCTION__);
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 #if !defined(Q_OS_WINCE) && defined(__IShellLibrary_INTERFACE_DEFINED__) // Windows SDK 7
@@ -1139,6 +1191,8 @@ QString QWindowsNativeFileDialogBase::libraryItemDefaultSaveFolder(IShellItem *)
 
 QString QWindowsNativeFileDialogBase::itemPath(IShellItem *item)
 {
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     SFGAOF attributes = 0;
     // Check whether it has a file system representation?
     if (FAILED(item->GetAttributes(SFGAO_FILESYSTEM, &attributes)))
@@ -1155,6 +1209,8 @@ QString QWindowsNativeFileDialogBase::itemPath(IShellItem *item)
     // Check for a "Library" item
     if ((QSysInfo::windowsVersion() & QSysInfo::WV_NT_based) && QSysInfo::windowsVersion() >= QSysInfo::WV_WINDOWS7)
         return QWindowsNativeFileDialogBase::libraryItemDefaultSaveFolder(item);
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return QString();
 }
 
@@ -1162,6 +1218,8 @@ int QWindowsNativeFileDialogBase::itemPaths(IShellItemArray *items,
                                             QList<QUrl> *result /* = 0 */)
 {
     DWORD itemCount = 0;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (result)
         result->clear();
     if (FAILED(items->GetCount(&itemCount)))
@@ -1174,6 +1232,8 @@ int QWindowsNativeFileDialogBase::itemPaths(IShellItemArray *items,
                 result->push_back(QUrl::fromLocalFile(QWindowsNativeFileDialogBase::itemPath(item)));
         }
    }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return itemCount;
 }
 
@@ -1224,6 +1284,8 @@ void QWindowsNativeFileDialogBase::setNameFilters(const QStringList &filters)
 {
     /* Populates an array of COMDLG_FILTERSPEC from list of filters,
      * store the strings in a flat, contiguous buffer. */
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     m_nameFilters = filters;
     int totalStringLength = 0;
     const QList<FilterSpec> specs = filterSpecs(filters, m_hideFiltersDetails, &totalStringLength);
@@ -1250,8 +1312,9 @@ void QWindowsNativeFileDialogBase::setNameFilters(const QStringList &filters)
         ptr += specs[i].filter.toWCharArray(ptr);
         *ptr++ = 0;
     }
-
     m_fileDialog->SetFileTypes(size, comFilterSpec.data());
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 void QWindowsNativeFileDialogBase::setDefaultSuffix(const QString &s)
@@ -1266,7 +1329,11 @@ void QWindowsNativeFileDialogBase::setDefaultSuffixSys(const QString &s)
     // filter ('*'). If this parameter is non-empty and the current filter has a suffix,
     // the dialog will append the filter's suffix.
     wchar_t *wSuffix = const_cast<wchar_t *>(reinterpret_cast<const wchar_t *>(s.utf16()));
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     m_fileDialog->SetDefaultExtension(wSuffix);
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 void QWindowsNativeFileDialogBase::setLabelText(QFileDialogOptions::DialogLabel l, const QString &text)
@@ -1274,12 +1341,16 @@ void QWindowsNativeFileDialogBase::setLabelText(QFileDialogOptions::DialogLabel 
     wchar_t *wText = const_cast<wchar_t *>(reinterpret_cast<const wchar_t *>(text.utf16()));
     switch (l) {
         break;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     case QFileDialogOptions::FileName:
         m_fileDialog->SetFileNameLabel(wText);
         break;
     case QFileDialogOptions::Accept:
         m_fileDialog->SetOkButtonLabel(wText);
         break;
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     case QFileDialogOptions::LookIn:
     case QFileDialogOptions::Reject:
     case QFileDialogOptions::FileType:
@@ -1290,7 +1361,11 @@ void QWindowsNativeFileDialogBase::setLabelText(QFileDialogOptions::DialogLabel 
 
 void QWindowsNativeFileDialogBase::selectFile(const QString &fileName) const
 {
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     m_fileDialog->SetFileName((wchar_t*)fileName.utf16());
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 // Return the index of the selected filter, accounting for QFileDialog
@@ -1318,17 +1393,25 @@ void QWindowsNativeFileDialogBase::selectNameFilter(const QString &filter)
                  qPrintable(m_nameFilters.join(QStringLiteral(", "))));
         return;
     }
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     m_fileDialog->SetFileTypeIndex(index + 1); // one-based.
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
 QString QWindowsNativeFileDialogBase::selectedNameFilter() const
 {
     UINT uIndex = 0;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (SUCCEEDED(m_fileDialog->GetFileTypeIndex(&uIndex))) {
         const int index = uIndex - 1; // one-based
         if (index < m_nameFilters.size())
             return m_nameFilters.at(index);
     }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return QString();
 }
 
@@ -1365,6 +1448,8 @@ bool QWindowsNativeFileDialogBase::onFileOk()
 
 void QWindowsNativeFileDialogBase::close()
 {
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     m_fileDialog->Close(S_OK);
 #ifndef Q_OS_WINCE
     // IFileDialog::Close() does not work unless invoked from a callback.
@@ -1374,8 +1459,12 @@ void QWindowsNativeFileDialogBase::close()
     if (hwnd && IsWindowVisible(hwnd))
         PostMessageW(hwnd, WM_CLOSE, 0, 0);
 #endif // !Q_OS_WINCE
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 }
 
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
 HRESULT QWindowsNativeFileDialogEventHandler::OnFolderChanging(IFileDialog *, IShellItem *item)
 {
     m_nativeFileDialog->onFolderChange(item);
@@ -1398,6 +1487,8 @@ HRESULT QWindowsNativeFileDialogEventHandler::OnFileOk(IFileDialog *)
 {
     return m_nativeFileDialog->onFileOk() ? S_OK : S_FALSE;
 }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 
 /*!
     \class QWindowsNativeSaveFileDialog
@@ -1456,8 +1547,12 @@ QList<QUrl> QWindowsNativeSaveFileDialog::dialogResult() const
 {
     QList<QUrl> result;
     IShellItem *item = 0;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (SUCCEEDED(fileDialog()->GetResult(&item)) && item)
         result.push_back(QUrl::fromLocalFile(QWindowsNativeFileDialogBase::itemPath(item)));
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return result;
 }
 
@@ -1465,9 +1560,13 @@ QList<QUrl> QWindowsNativeSaveFileDialog::selectedFiles() const
 {
     QList<QUrl> result;
     IShellItem *item = 0;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     const HRESULT hr = fileDialog()->GetCurrentSelection(&item);
     if (SUCCEEDED(hr) && item)
         result.push_back(QUrl::fromLocalFile(QWindowsNativeSaveFileDialog::itemPath(item)));
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return result;
 }
 
@@ -1490,16 +1589,24 @@ public:
     virtual QList<QUrl> dialogResult() const;
 
 private:
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     inline IFileOpenDialog *openFileDialog() const
         { return static_cast<IFileOpenDialog *>(fileDialog()); }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
 };
 
 QList<QUrl> QWindowsNativeOpenFileDialog::dialogResult() const
 {
     QList<QUrl> result;
     IShellItemArray *items = 0;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (SUCCEEDED(openFileDialog()->GetResults(&items)) && items)
         QWindowsNativeFileDialogBase::itemPaths(items, &result);
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return result;
 }
 
@@ -1507,9 +1614,13 @@ QList<QUrl> QWindowsNativeOpenFileDialog::selectedFiles() const
 {
     QList<QUrl> result;
     IShellItemArray *items = 0;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     const HRESULT hr = openFileDialog()->GetSelectedItems(&items);
     if (SUCCEEDED(hr) && items)
         QWindowsNativeFileDialogBase::itemPaths(items, &result);
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return result;
 }
 
@@ -1523,6 +1634,8 @@ QWindowsNativeFileDialogBase *QWindowsNativeFileDialogBase::create(QFileDialogOp
                                                                    const QWindowsFileDialogSharedData &data)
 {
     QWindowsNativeFileDialogBase *result = 0;
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (am == QFileDialogOptions::AcceptOpen) {
         result = new QWindowsNativeOpenFileDialog(data);
         if (!result->init(CLSID_FileOpenDialog, IID_IFileOpenDialog)) {
@@ -1536,6 +1649,8 @@ QWindowsNativeFileDialogBase *QWindowsNativeFileDialogBase::create(QFileDialogOp
             return 0;
         }
     }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     return result;
 }
 

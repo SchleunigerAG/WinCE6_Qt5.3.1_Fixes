@@ -1,4 +1,4 @@
-TARGET      = qdeclarativeview
+TARGET      = qdeclarativeview531V3-WCE6
 QT         += declarative widgets designer
 
 PLUGIN_TYPE = designer

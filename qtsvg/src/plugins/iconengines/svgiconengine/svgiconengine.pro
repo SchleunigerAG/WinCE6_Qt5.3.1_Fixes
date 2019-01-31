@@ -1,4 +1,4 @@
-TARGET  = qsvgicon
+TARGET  = qsvgicon531V3-WCE6
 
 PLUGIN_TYPE = iconengines
 PLUGIN_EXTENDS = svg

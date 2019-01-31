@@ -1,4 +1,4 @@
-TARGET = qsqldb2
+TARGET = qsqldb2531V3-WCE6
 
 SOURCES = main.cpp
 OTHER_FILES += db2.json

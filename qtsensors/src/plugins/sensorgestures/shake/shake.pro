@@ -1,4 +1,4 @@
-TARGET = qtsensorgestures_shakeplugin
+TARGET = qtsensorgestures_shakeplugin531V3-WCE6
 QT = core sensors
 
 PLUGIN_TYPE = sensorgestures

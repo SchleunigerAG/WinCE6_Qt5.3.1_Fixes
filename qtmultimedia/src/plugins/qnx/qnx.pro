@@ -1,4 +1,4 @@
-TARGET = qtmedia_qnx
+TARGET = qtmedia_qnx531V3-WCE6
 QT += multimedia-private gui-private
 
 PLUGIN_TYPE=mediaservice

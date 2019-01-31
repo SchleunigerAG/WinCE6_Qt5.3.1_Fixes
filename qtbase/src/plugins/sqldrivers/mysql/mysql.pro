@@ -1,4 +1,4 @@
-TARGET = qsqlmysql
+TARGET = qsqlmysql531V3-WCE6
 
 SOURCES = main.cpp
 OTHER_FILES += mysql.json

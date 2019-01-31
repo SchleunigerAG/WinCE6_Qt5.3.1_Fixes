@@ -1,4 +1,4 @@
-TARGET = qmldbg_tcp_qtdeclarative
+TARGET = qmldbg_tcp_qtdeclarative531V3-WCE6
 QT       += declarative declarative-private network
 
 PLUGIN_TYPE = qml1tooling

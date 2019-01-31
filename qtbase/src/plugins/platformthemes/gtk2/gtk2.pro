@@ -1,4 +1,4 @@
-TARGET = qgtk2
+TARGET = qgtk2531V3-WCE6
 
 PLUGIN_TYPE = platformthemes
 PLUGIN_EXTENDS = -

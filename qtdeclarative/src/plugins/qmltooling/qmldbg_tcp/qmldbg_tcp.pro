@@ -1,4 +1,4 @@
-TARGET = qmldbg_tcp
+TARGET = qmldbg_tcp531V3-WCE6
 QT = qml-private
 
 PLUGIN_TYPE = qmltooling

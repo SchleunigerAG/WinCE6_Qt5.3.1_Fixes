@@ -1,4 +1,4 @@
-TARGET = qtgeoservices_nokia
+TARGET = qtgeoservices_nokia531V3-WCE6
 QT += location-private positioning-private network
 
 contains(QT_CONFIG, location-china-support) {

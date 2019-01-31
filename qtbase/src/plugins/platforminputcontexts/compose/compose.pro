@@ -1,4 +1,4 @@
-TARGET = composeplatforminputcontextplugin
+TARGET = composeplatforminputcontextplugin531V3-WCE6
 
 PLUGIN_TYPE = platforminputcontexts
 PLUGIN_EXTENDS = -

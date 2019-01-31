@@ -1,4 +1,4 @@
-TARGET = cupsprintersupport
+TARGET = cupsprintersupport531V3-WCE6
 MODULE = cupsprintersupport
 PLUGIN_TYPE = printsupport
 PLUGIN_CLASS_NAME = QCupsPrinterSupportPlugin

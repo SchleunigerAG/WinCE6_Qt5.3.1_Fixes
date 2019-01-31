@@ -1,4 +1,4 @@
-TARGET = qtmultimedia_m3u
+TARGET = qtmultimedia_m3u531V3-WCE6
 QT += multimedia-private
 
 PLUGIN_TYPE=playlistformats

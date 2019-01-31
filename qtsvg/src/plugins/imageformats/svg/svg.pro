@@ -1,4 +1,4 @@
-TARGET  = qsvg
+TARGET  = qsvg531V3-WCE6
 
 PLUGIN_TYPE = imageformats
 PLUGIN_EXTENDS = svg

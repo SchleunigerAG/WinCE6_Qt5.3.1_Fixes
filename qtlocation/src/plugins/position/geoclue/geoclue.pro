@@ -1,4 +1,4 @@
-TARGET = qtposition_geoclue
+TARGET = qtposition_geoclue531V3-WCE6
 QT = core positioning
 
 PLUGIN_TYPE = position

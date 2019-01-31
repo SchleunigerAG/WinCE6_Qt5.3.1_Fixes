@@ -1,4 +1,4 @@
-TARGET = qtposition_winrt
+TARGET = qtposition_winrt531V3-WCE6
 QT = core positioning
 
 PLUGIN_TYPE = position

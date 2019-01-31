@@ -1,4 +1,4 @@
-TARGET = qmeegointegration
+TARGET = qmeegointegration531V3-WCE6
 
 PLUGIN_TYPE = generic
 PLUGIN_EXTENDS = -

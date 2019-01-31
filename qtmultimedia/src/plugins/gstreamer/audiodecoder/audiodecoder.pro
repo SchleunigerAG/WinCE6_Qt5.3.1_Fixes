@@ -1,4 +1,4 @@
-TARGET = gstaudiodecoder
+TARGET = gstaudiodecoder531V3-WCE6
 
 PLUGIN_TYPE = mediaservice
 PLUGIN_CLASS_NAME = QGstreamerAudioDecoderServicePlugin

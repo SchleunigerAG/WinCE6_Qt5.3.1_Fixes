@@ -1,4 +1,4 @@
-TARGET = qsqlibase
+TARGET = qsqlibase531V3-WCE6
 
 SOURCES = main.cpp
 OTHER_FILES += ibase.json

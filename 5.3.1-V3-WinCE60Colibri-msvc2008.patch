@@ -1,0 +1,1754 @@
+Index: qtlocation/src/plugins/geoservices/osm/osm.pro
+===================================================================
+--- qtlocation/src/plugins/geoservices/osm/osm.pro	(Revision 28)
++++ qtlocation/src/plugins/geoservices/osm/osm.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtgeoservices_osm
++TARGET = qtgeoservices_osm531V3-WCE6
+ QT += location-private positioning-private network
+ 
+ PLUGIN_TYPE = geoservices
+Index: qtlocation/src/plugins/geoservices/nokia/nokia.pro
+===================================================================
+--- qtlocation/src/plugins/geoservices/nokia/nokia.pro	(Revision 28)
++++ qtlocation/src/plugins/geoservices/nokia/nokia.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtgeoservices_nokia
++TARGET = qtgeoservices_nokia531V3-WCE6
+ QT += location-private positioning-private network
+ 
+ contains(QT_CONFIG, location-china-support) {
+Index: qtlocation/src/plugins/position/simulator/simulator.pro
+===================================================================
+--- qtlocation/src/plugins/position/simulator/simulator.pro	(Revision 28)
++++ qtlocation/src/plugins/position/simulator/simulator.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtposition_simulator
++TARGET = qtposition_simulator531V3-WCE6
+ QT = core network positioning
+ 
+ PLUGIN_TYPE = position
+Index: qtlocation/src/plugins/position/blackberry/blackberry.pro
+===================================================================
+--- qtlocation/src/plugins/position/blackberry/blackberry.pro	(Revision 28)
++++ qtlocation/src/plugins/position/blackberry/blackberry.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtposition_blackberry
++TARGET = qtposition_blackberry531V3-WCE6
+ QT = core positioning
+ 
+ PLUGIN_TYPE = position
+Index: qtlocation/src/plugins/position/corelocation/corelocation.pro
+===================================================================
+--- qtlocation/src/plugins/position/corelocation/corelocation.pro	(Revision 28)
++++ qtlocation/src/plugins/position/corelocation/corelocation.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtposition_cl
++TARGET = qtposition_cl531V3-WCE6
+ QT = core positioning
+ 
+ PLUGIN_TYPE = position
+Index: qtlocation/src/plugins/position/geoclue/geoclue.pro
+===================================================================
+--- qtlocation/src/plugins/position/geoclue/geoclue.pro	(Revision 28)
++++ qtlocation/src/plugins/position/geoclue/geoclue.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtposition_geoclue
++TARGET = qtposition_geoclue531V3-WCE6
+ QT = core positioning
+ 
+ PLUGIN_TYPE = position
+Index: qtlocation/src/plugins/position/winrt/winrt.pro
+===================================================================
+--- qtlocation/src/plugins/position/winrt/winrt.pro	(Revision 28)
++++ qtlocation/src/plugins/position/winrt/winrt.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtposition_winrt
++TARGET = qtposition_winrt531V3-WCE6
+ QT = core positioning
+ 
+ PLUGIN_TYPE = position
+Index: qtlocation/src/plugins/position/gypsy/gypsy.pro
+===================================================================
+--- qtlocation/src/plugins/position/gypsy/gypsy.pro	(Revision 28)
++++ qtlocation/src/plugins/position/gypsy/gypsy.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtposition_gypsy
++TARGET = qtposition_gypsy531V3-WCE6
+ QT = core positioning
+ 
+ PLUGIN_TYPE = position
+Index: qtlocation/src/plugins/position/positionpoll/positionpoll.pro
+===================================================================
+--- qtlocation/src/plugins/position/positionpoll/positionpoll.pro	(Revision 28)
++++ qtlocation/src/plugins/position/positionpoll/positionpoll.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtposition_positionpoll
++TARGET = qtposition_positionpoll531V3-WCE6
+ QT = core positioning
+ 
+ PLUGIN_TYPE = position
+Index: qtimageformats/src/plugins/imageformats/mng/mng.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/mng/mng.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/mng/mng.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qmng
++TARGET  = qmng531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QMngPlugin
+Index: qtimageformats/src/plugins/imageformats/wbmp/wbmp.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/wbmp/wbmp.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/wbmp/wbmp.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qwbmp
++TARGET = qwbmp531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QWbmpPlugin
+Index: qtimageformats/src/plugins/imageformats/tiff/tiff.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/tiff/tiff.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/tiff/tiff.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qtiff
++TARGET  = qtiff531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QTiffPlugin
+Index: qtimageformats/src/plugins/imageformats/dds/dds.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/dds/dds.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/dds/dds.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qdds
++TARGET = qdds531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QDDSPlugin
+Index: qtimageformats/src/plugins/imageformats/jp2/jp2.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/jp2/jp2.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/jp2/jp2.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qjp2
++TARGET  = qjp2531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QJp2Plugin
+Index: qtimageformats/src/plugins/imageformats/tga/tga.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/tga/tga.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/tga/tga.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtga
++TARGET = qtga531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QTgaPlugin
+Index: qtimageformats/src/plugins/imageformats/icns/icns.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/icns/icns.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/icns/icns.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qicns
++TARGET = qicns531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QICNSPlugin
+Index: qtimageformats/src/plugins/imageformats/imageformats.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/imageformats.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/imageformats.pro	(Revision 30)
+@@ -9,7 +9,7 @@
+     wbmp \
+     webp
+ 
+-wince:SUBDIRS -= jp2
++wince:SUBDIRS -= jp2 tiff
+ 
+ winrt {
+     SUBDIRS -= tiff \
+Index: qtimageformats/src/plugins/imageformats/webp/webp.pro
+===================================================================
+--- qtimageformats/src/plugins/imageformats/webp/webp.pro	(Revision 28)
++++ qtimageformats/src/plugins/imageformats/webp/webp.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qwebp
++TARGET  = qwebp531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QWebpPlugin
+Index: qtxmlpatterns/src/xmlpatterns/parser/qquerytransformparser.cpp
+===================================================================
+--- qtxmlpatterns/src/xmlpatterns/parser/qquerytransformparser.cpp	(Revision 28)
++++ qtxmlpatterns/src/xmlpatterns/parser/qquerytransformparser.cpp	(Revision 30)
+@@ -178,6 +178,10 @@
+ //
+ // We mean it.
+ 
++// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
++#define _CRT_BANNED_DEPRECATE( x )
++// CHANGES SCHLEUNIGER AG, April 2015 :: END
++
+ #include <limits>
+ 
+ #include <QUrl>
+Index: qtxmlpatterns/src/xmlpatterns/data/qcommonvalues.cpp
+===================================================================
+--- qtxmlpatterns/src/xmlpatterns/data/qcommonvalues.cpp	(Revision 28)
++++ qtxmlpatterns/src/xmlpatterns/data/qcommonvalues.cpp	(Revision 30)
+@@ -39,6 +39,10 @@
+ **
+ ****************************************************************************/
+ 
++// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
++#define _CRT_BANNED_DEPRECATE( x )
++// CHANGES SCHLEUNIGER AG, April 2015 :: END
++
+ #include <limits>
+ 
+ #include "qabstractfloat_p.h"
+Index: qtmultimedia/src/plugins/opensles/opensles.pro
+===================================================================
+--- qtmultimedia/src/plugins/opensles/opensles.pro	(Revision 28)
++++ qtmultimedia/src/plugins/opensles/opensles.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtaudio_opensles
++TARGET = qtaudio_opensles531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE = audio
+Index: qtmultimedia/src/plugins/gstreamer/audiodecoder/audiodecoder.pro
+===================================================================
+--- qtmultimedia/src/plugins/gstreamer/audiodecoder/audiodecoder.pro	(Revision 28)
++++ qtmultimedia/src/plugins/gstreamer/audiodecoder/audiodecoder.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = gstaudiodecoder
++TARGET = gstaudiodecoder531V3-WCE6
+ 
+ PLUGIN_TYPE = mediaservice
+ PLUGIN_CLASS_NAME = QGstreamerAudioDecoderServicePlugin
+Index: qtmultimedia/src/plugins/gstreamer/mediaplayer/mediaplayer.pro
+===================================================================
+--- qtmultimedia/src/plugins/gstreamer/mediaplayer/mediaplayer.pro	(Revision 28)
++++ qtmultimedia/src/plugins/gstreamer/mediaplayer/mediaplayer.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = gstmediaplayer
++TARGET = gstmediaplayer531V3-WCE6
+ 
+ PLUGIN_TYPE = mediaservice
+ PLUGIN_CLASS_NAME = QGstreamerPlayerServicePlugin
+Index: qtmultimedia/src/plugins/gstreamer/camerabin/camerabin.pro
+===================================================================
+--- qtmultimedia/src/plugins/gstreamer/camerabin/camerabin.pro	(Revision 28)
++++ qtmultimedia/src/plugins/gstreamer/camerabin/camerabin.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = gstcamerabin
++TARGET = gstcamerabin531V3-WCE6
+ 
+ QT += multimedia-private
+ 
+Index: qtmultimedia/src/plugins/gstreamer/mediacapture/mediacapture.pro
+===================================================================
+--- qtmultimedia/src/plugins/gstreamer/mediacapture/mediacapture.pro	(Revision 28)
++++ qtmultimedia/src/plugins/gstreamer/mediacapture/mediacapture.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = gstmediacapture
++TARGET = gstmediacapture531V3-WCE6
+ 
+ PLUGIN_TYPE = mediaservice
+ PLUGIN_CLASS_NAME = QGstreamerCaptureServicePlugin
+Index: qtmultimedia/src/plugins/wmf/wmf.pro
+===================================================================
+--- qtmultimedia/src/plugins/wmf/wmf.pro	(Revision 28)
++++ qtmultimedia/src/plugins/wmf/wmf.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = wmfengine
++TARGET = wmfengine531V3-WCE6
+ QT += multimedia-private network
+ qtHaveModule(widgets) {
+     QT += multimediawidgets-private
+Index: qtmultimedia/src/plugins/avfoundation/camera/camera.pro
+===================================================================
+--- qtmultimedia/src/plugins/avfoundation/camera/camera.pro	(Revision 28)
++++ qtmultimedia/src/plugins/avfoundation/camera/camera.pro	(Revision 30)
+@@ -1,7 +1,7 @@
+ # Avoid clash with a variable named `slots' in a Quartz header
+ CONFIG += no_keywords
+ 
+-TARGET = qavfcamera
++TARGET = qavfcamera531V3-WCE6
+ QT += multimedia-private network
+ 
+ PLUGIN_TYPE = mediaservice
+Index: qtmultimedia/src/plugins/avfoundation/mediaplayer/mediaplayer.pro
+===================================================================
+--- qtmultimedia/src/plugins/avfoundation/mediaplayer/mediaplayer.pro	(Revision 28)
++++ qtmultimedia/src/plugins/avfoundation/mediaplayer/mediaplayer.pro	(Revision 30)
+@@ -4,7 +4,7 @@
+ # Avoid clash with a variable named `slots' in a Quartz header
+ CONFIG += no_keywords
+ 
+-TARGET = qavfmediaplayer
++TARGET = qavfmediaplayer531V3-WCE6
+ QT += multimedia-private network
+ 
+ PLUGIN_TYPE = mediaservice
+Index: qtmultimedia/src/plugins/m3u/m3u.pro
+===================================================================
+--- qtmultimedia/src/plugins/m3u/m3u.pro	(Revision 28)
++++ qtmultimedia/src/plugins/m3u/m3u.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtmultimedia_m3u
++TARGET = qtmultimedia_m3u531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE=playlistformats
+Index: qtmultimedia/src/plugins/v4l/v4l.pro
+===================================================================
+--- qtmultimedia/src/plugins/v4l/v4l.pro	(Revision 28)
++++ qtmultimedia/src/plugins/v4l/v4l.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtmedia_v4lengine
++TARGET = qtmedia_v4lengine531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE = mediaservice
+Index: qtmultimedia/src/plugins/qnx-audio/audio/audio.pro
+===================================================================
+--- qtmultimedia/src/plugins/qnx-audio/audio/audio.pro	(Revision 28)
++++ qtmultimedia/src/plugins/qnx-audio/audio/audio.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtmedia_qnx_audio
++TARGET = qtmedia_qnx_audio531V3-WCE6
+ QT += multimedia-private
+ CONFIG += no_private_qt_headers_warning
+ 
+Index: qtmultimedia/src/plugins/qnx/qnx.pro
+===================================================================
+--- qtmultimedia/src/plugins/qnx/qnx.pro	(Revision 28)
++++ qtmultimedia/src/plugins/qnx/qnx.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtmedia_qnx
++TARGET = qtmedia_qnx531V3-WCE6
+ QT += multimedia-private gui-private
+ 
+ PLUGIN_TYPE=mediaservice
+Index: qtmultimedia/src/plugins/resourcepolicy/resourcepolicy.pro
+===================================================================
+--- qtmultimedia/src/plugins/resourcepolicy/resourcepolicy.pro	(Revision 28)
++++ qtmultimedia/src/plugins/resourcepolicy/resourcepolicy.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = resourceqt
++TARGET = resourceqt531V3-WCE6
+ 
+ QT += multimedia-private
+ CONFIG += no_private_qt_headers_warning link_pkgconfig
+Index: qtmultimedia/src/plugins/pulseaudio/pulseaudio.pro
+===================================================================
+--- qtmultimedia/src/plugins/pulseaudio/pulseaudio.pro	(Revision 28)
++++ qtmultimedia/src/plugins/pulseaudio/pulseaudio.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtmedia_pulse
++TARGET = qtmedia_pulse531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE = audio
+Index: qtmultimedia/src/plugins/coreaudio/coreaudio.pro
+===================================================================
+--- qtmultimedia/src/plugins/coreaudio/coreaudio.pro	(Revision 28)
++++ qtmultimedia/src/plugins/coreaudio/coreaudio.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtaudio_coreaudio
++TARGET = qtaudio_coreaudio531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE = audio
+Index: qtmultimedia/src/plugins/qt7/qt7.pro
+===================================================================
+--- qtmultimedia/src/plugins/qt7/qt7.pro	(Revision 28)
++++ qtmultimedia/src/plugins/qt7/qt7.pro	(Revision 30)
+@@ -1,7 +1,7 @@
+ # Avoid clash with a variable named `slots' in a Quartz header
+ CONFIG += no_keywords
+ 
+-TARGET = qqt7engine
++TARGET = qqt7engine531V3-WCE6
+ QT += multimedia-private network
+ qtHaveModule(widgets) {
+     QT += multimediawidgets-private widgets
+Index: qtmultimedia/src/plugins/directshow/directshow.pro
+===================================================================
+--- qtmultimedia/src/plugins/directshow/directshow.pro	(Revision 28)
++++ qtmultimedia/src/plugins/directshow/directshow.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = dsengine
++TARGET = dsengine531V3-WCE6
+ 
+ PLUGIN_TYPE=mediaservice
+ PLUGIN_CLASS_NAME = DSServicePlugin
+Index: qtmultimedia/src/plugins/videonode/imx6/imx6.pro
+===================================================================
+--- qtmultimedia/src/plugins/videonode/imx6/imx6.pro	(Revision 28)
++++ qtmultimedia/src/plugins/videonode/imx6/imx6.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = imx6vivantevideonode
++TARGET = imx6vivantevideonode531V3-WCE6
+ QT += multimedia-private qtmultimediaquicktools-private
+ 
+ PLUGIN_TYPE=video/videonode
+Index: qtmultimedia/src/plugins/windowsaudio/windowsaudio.pro
+===================================================================
+--- qtmultimedia/src/plugins/windowsaudio/windowsaudio.pro	(Revision 28)
++++ qtmultimedia/src/plugins/windowsaudio/windowsaudio.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtaudio_windows
++TARGET = qtaudio_windows531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE = audio
+Index: qtmultimedia/src/plugins/alsa/alsa.pro
+===================================================================
+--- qtmultimedia/src/plugins/alsa/alsa.pro	(Revision 28)
++++ qtmultimedia/src/plugins/alsa/alsa.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtaudio_alsa
++TARGET = qtaudio_alsa531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE = audio
+Index: qtmultimedia/src/plugins/audiocapture/audiocapture.pro
+===================================================================
+--- qtmultimedia/src/plugins/audiocapture/audiocapture.pro	(Revision 28)
++++ qtmultimedia/src/plugins/audiocapture/audiocapture.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtmedia_audioengine
++TARGET = qtmedia_audioengine531V3-WCE6
+ QT += multimedia-private
+ 
+ PLUGIN_TYPE=mediaservice
+Index: qtsensors/src/plugins/sensorgestures/shake/shake.pro
+===================================================================
+--- qtsensors/src/plugins/sensorgestures/shake/shake.pro	(Revision 28)
++++ qtsensors/src/plugins/sensorgestures/shake/shake.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensorgestures_shakeplugin
++TARGET = qtsensorgestures_shakeplugin531V3-WCE6
+ QT = core sensors
+ 
+ PLUGIN_TYPE = sensorgestures
+Index: qtsensors/src/plugins/sensorgestures/qtsensors/qtsensors.pro
+===================================================================
+--- qtsensors/src/plugins/sensorgestures/qtsensors/qtsensors.pro	(Revision 28)
++++ qtsensors/src/plugins/sensorgestures/qtsensors/qtsensors.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensorgestures_plugin
++TARGET = qtsensorgestures_plugin531V3-WCE6
+ QT = core sensors
+ 
+ PLUGIN_TYPE = sensorgestures
+Index: qtsensors/src/plugins/sensors/winrt/winrt.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/winrt/winrt.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/winrt/winrt.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_winrt
++TARGET = qtsensors_winrt531V3-WCE6
+ QT = sensors core
+ 
+ PLUGIN_TYPE = sensors
+Index: qtsensors/src/plugins/sensors/sensorfw/sensorfw.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/sensorfw/sensorfw.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/sensorfw/sensorfw.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_sensorfw
++TARGET = qtsensors_sensorfw531V3-WCE6
+ QT = core sensors network dbus
+ 
+ PLUGIN_TYPE = sensors
+Index: qtsensors/src/plugins/sensors/ios/ios.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/ios/ios.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/ios/ios.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_ios
++TARGET = qtsensors_ios531V3-WCE6
+ QT = core sensors
+ 
+ PLUGIN_TYPE = sensors
+Index: qtsensors/src/plugins/sensors/dummy/dummy.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/dummy/dummy.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/dummy/dummy.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_dummy
++TARGET = qtsensors_dummy531V3-WCE6
+ QT = sensors core
+ 
+ PLUGIN_TYPE = sensors
+Index: qtsensors/src/plugins/sensors/generic/generic.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/generic/generic.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/generic/generic.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_generic
++TARGET = qtsensors_generic531V3-WCE6
+ QT = core sensors
+ 
+ PLUGIN_TYPE = sensors
+Index: qtsensors/src/plugins/sensors/linux/linux.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/linux/linux.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/linux/linux.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_linuxsys
++TARGET = qtsensors_linuxsys531V3-WCE6
+ QT = core sensors
+ 
+ PLUGIN_TYPE = sensors
+Index: qtsensors/src/plugins/sensors/simulator/simulator.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/simulator/simulator.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/simulator/simulator.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_simulator
++TARGET = qtsensors_simulator531V3-WCE6
+ 
+ PLUGIN_TYPE = sensors
+ PLUGIN_CLASS_NAME = SimulatorSensorPlugin
+Index: qtsensors/src/plugins/sensors/blackberry/blackberry.pro
+===================================================================
+--- qtsensors/src/plugins/sensors/blackberry/blackberry.pro	(Revision 28)
++++ qtsensors/src/plugins/sensors/blackberry/blackberry.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtsensors_blackberry
++TARGET = qtsensors_blackberry531V3-WCE6
+ QT = sensors core
+ DEFINES += QT_NO_CAST_FROM_ASCII QT_NO_CAST_TO_ASCII
+ 
+Index: qtquick1/src/plugins/qmltooling/qmldbg_inspector/qmldbg_inspector.pro
+===================================================================
+--- qtquick1/src/plugins/qmltooling/qmldbg_inspector/qmldbg_inspector.pro	(Revision 28)
++++ qtquick1/src/plugins/qmltooling/qmldbg_inspector/qmldbg_inspector.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qmldbg_inspector
++TARGET = qmldbg_inspector531V3-WCE6
+ QT       += declarative declarative-private gui widgets core-private
+ 
+ PLUGIN_TYPE = qml1tooling
+Index: qtquick1/src/plugins/qmltooling/qmldbg_tcp_qtquick1/qmldbg_tcp_qtquick1.pro
+===================================================================
+--- qtquick1/src/plugins/qmltooling/qmldbg_tcp_qtquick1/qmldbg_tcp_qtquick1.pro	(Revision 28)
++++ qtquick1/src/plugins/qmltooling/qmldbg_tcp_qtquick1/qmldbg_tcp_qtquick1.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qmldbg_tcp_qtdeclarative
++TARGET = qmldbg_tcp_qtdeclarative531V3-WCE6
+ QT       += declarative declarative-private network
+ 
+ PLUGIN_TYPE = qml1tooling
+Index: qtquick1/src/plugins/qdeclarativeview/qdeclarativeview.pro
+===================================================================
+--- qtquick1/src/plugins/qdeclarativeview/qdeclarativeview.pro	(Revision 28)
++++ qtquick1/src/plugins/qdeclarativeview/qdeclarativeview.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET      = qdeclarativeview
++TARGET      = qdeclarativeview531V3-WCE6
+ QT         += declarative widgets designer
+ 
+ PLUGIN_TYPE = designer
+Index: qtsvg/src/plugins/imageformats/svg/svg.pro
+===================================================================
+--- qtsvg/src/plugins/imageformats/svg/svg.pro	(Revision 28)
++++ qtsvg/src/plugins/imageformats/svg/svg.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qsvg
++TARGET  = qsvg531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_EXTENDS = svg
+Index: qtsvg/src/plugins/iconengines/svgiconengine/svgiconengine.pro
+===================================================================
+--- qtsvg/src/plugins/iconengines/svgiconengine/svgiconengine.pro	(Revision 28)
++++ qtsvg/src/plugins/iconengines/svgiconengine/svgiconengine.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qsvgicon
++TARGET  = qsvgicon531V3-WCE6
+ 
+ PLUGIN_TYPE = iconengines
+ PLUGIN_EXTENDS = svg
+Index: qtscript/src/plugins/script/qtdbus/qtdbus.pro
+===================================================================
+--- qtscript/src/plugins/script/qtdbus/qtdbus.pro	(Revision 28)
++++ qtscript/src/plugins/script/qtdbus/qtdbus.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qtscriptdbus
++TARGET  = qtscriptdbus531V3-WCE6
+ 
+ PLUGIN_TYPE = script
+ PLUGIN_CLASS_NAME = QtDBusScriptPlugin
+Index: qtbase/mkspecs/common/wince/qmake.conf
+===================================================================
+--- qtbase/mkspecs/common/wince/qmake.conf	(Revision 28)
++++ qtbase/mkspecs/common/wince/qmake.conf	(Revision 30)
+@@ -17,12 +17,12 @@
+ QMAKE_LEXFLAGS          =
+ QMAKE_YACC              = byacc
+ QMAKE_YACCFLAGS         = -d
+-QMAKE_CFLAGS            = -nologo -Zm200 -Zc:wchar_t-
++QMAKE_CFLAGS            = -nologo -Zm200
+ QMAKE_CFLAGS_WARN_ON    = -W3
+ QMAKE_CFLAGS_WARN_OFF   = -W0
+-QMAKE_CFLAGS_RELEASE    = -O2 -MD
+-QMAKE_CFLAGS_LTCG       = -GL
+-QMAKE_CFLAGS_DEBUG      = -DDEBUG -D_DEBUG -Zi -MDd
++QMAKE_CFLAGS_RELEASE    = -O2 -MT
++QMAKE_CFLAGS_LTCG       =
++QMAKE_CFLAGS_DEBUG      = -DDEBUG -D_DEBUG -Zi -MTd
+ QMAKE_CFLAGS_YACC       =
+ 
+ # Uncomment the following lines to reduce library sizes
+@@ -58,14 +58,14 @@
+ QMAKE_LFLAGS            = /NOLOGO /NODEFAULTLIB:OLDNAMES.LIB
+ QMAKE_LFLAGS_RELEASE    = /INCREMENTAL:NO
+ QMAKE_LFLAGS_DEBUG      = /DEBUG
+-QMAKE_LFLAGS_LTCG       = /LTCG
++QMAKE_LFLAGS_LTCG       =
+ QMAKE_LIBS_NETWORK      = ws2.lib
+ QMAKE_LIBS_OPENGL       =
+ QMAKE_LIBS_COMPAT       =
+ QMAKE_EXTENSION_STATICLIB = lib
+ 
+-QMAKE_LIBS_EGL          = libEGL.lib
+-QMAKE_LIBS_OPENGL_ES2   = libGLESv2.lib
++QMAKE_LIBS_EGL          =
++QMAKE_LIBS_OPENGL_ES2   =
+ 
+ QMAKE_LIBS_QT_ENTRY     = -lqtmain
+ 
+Index: qtbase/mkspecs/wince60colibri-armv4i-msvc2008/qplatformdefs.h
+===================================================================
+--- qtbase/mkspecs/wince60colibri-armv4i-msvc2008/qplatformdefs.h	(Revision 0)
++++ qtbase/mkspecs/wince60colibri-armv4i-msvc2008/qplatformdefs.h	(Revision 30)
+@@ -0,0 +1,43 @@
++/****************************************************************************
++**
++** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
++** Contact: http://www.qt-project.org/legal
++**
++** This file is part of the qmake spec of the Qt Toolkit.
++**
++** $QT_BEGIN_LICENSE:LGPL$
++** Commercial License Usage
++** Licensees holding valid commercial Qt licenses may use this file in
++** accordance with the commercial license agreement provided with the
++** Software or, alternatively, in accordance with the terms contained in
++** a written agreement between you and Digia.  For licensing terms and
++** conditions see http://qt.digia.com/licensing.  For further information
++** use the contact form at http://qt.digia.com/contact-us.
++**
++** GNU Lesser General Public License Usage
++** Alternatively, this file may be used under the terms of the GNU Lesser
++** General Public License version 2.1 as published by the Free Software
++** Foundation and appearing in the file LICENSE.LGPL included in the
++** packaging of this file.  Please review the following information to
++** ensure the GNU Lesser General Public License version 2.1 requirements
++** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
++**
++** In addition, as a special exception, Digia gives you certain additional
++** rights.  These rights are described in the Digia Qt LGPL Exception
++** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
++**
++** GNU General Public License Usage
++** Alternatively, this file may be used under the terms of the GNU
++** General Public License version 3.0 as published by the Free Software
++** Foundation and appearing in the file LICENSE.GPL included in the
++** packaging of this file.  Please review the following information to
++** ensure the GNU General Public License version 3.0 requirements will be
++** met: http://www.gnu.org/copyleft/gpl.html.
++**
++**
++** $QT_END_LICENSE$
++**
++****************************************************************************/
++
++#include "../common/wince/qplatformdefs.h"
++
+Index: qtbase/mkspecs/wince60colibri-armv4i-msvc2008/qmake.conf
+===================================================================
+--- qtbase/mkspecs/wince60colibri-armv4i-msvc2008/qmake.conf	(Revision 0)
++++ qtbase/mkspecs/wince60colibri-armv4i-msvc2008/qmake.conf	(Revision 30)
+@@ -0,0 +1,30 @@
++# qmake configuration for Windows Embedded Compact 7 with VS2008 on ARM targets
++#
++# This is just a template for creating WEC7 mkspecs for ARM targets
++# Replace the SDK name with actual SDK name.
++
++include(../common/wince/qmake.conf)
++
++CE_SDK                  = Toradex_CE600
++CE_ARCH                 = ARMV4I
++
++DEFINES                += QT_NO_CLIPBOARD QT_NO_ACCESSIBILITY QT_NO_NATIVE_GESTURES QT_NOSTANDARDSHELL_UI_MODEL _CRT_SECURE_NO_DEPRECATE _WIN32_WCE=0x600 $$CE_ARCH _AMRV7_ armv7 _ARM_
++
++QMAKE_LFLAGS            = /MAP /DEBUG /OPT:REF /OPT:ICF
++QMAKE_LFLAGS_CONSOLE    = /SUBSYSTEM:WINDOWSCE,6.00 /MACHINE:THUMB /ENTRY:mainACRTStartup
++QMAKE_LFLAGS_WINDOWS    = /SUBSYSTEM:WINDOWSCE,6.00 /MACHINE:THUMB
++QMAKE_LFLAGS_DLL        = /SUBSYSTEM:WINDOWSCE,6.00 /MACHINE:THUMB /DLL /SAFESEH:NO
++QMAKE_LIBFLAGS_RELEASE  = /LTCG
++QMAKE_LIBS              = corelibc.lib coredll.lib
++QMAKE_LIBS_CORE         = corelibc.lib ole32.lib oleaut32.lib uuid.lib commctrl.lib coredll.lib winsock.lib
++QMAKE_LIBS_GUI          = ceshell.lib ole32.lib $$QMAKE_LIBS_CORE
++QMAKE_LIBS_NETWORK      = ws2.lib $$QMAKE_LIBS_GUI
++QMAKE_LIBS_OPENGL       =
++QMAKE_LIBS_COMPAT       =
++QMAKE_LIBS_OPENVG       =
++QMAKE_LIBS_OPENGL_ES2   =
++
++QMAKE_RC                = rc /DUNDER_CE=600 /D_WIN32_WCE=0x600
++
++QMAKE_COMPILER_DEFINES -= _MSC_VER=1400
++QMAKE_COMPILER_DEFINES += _MSC_VER=1500
+Index: qtbase/src/corelib/tools/qdatetime.h
+===================================================================
+--- qtbase/src/corelib/tools/qdatetime.h	(Revision 28)
++++ qtbase/src/corelib/tools/qdatetime.h	(Revision 30)
+@@ -119,7 +119,9 @@
+     inline qint64 toJulianDay() const { return jd; }
+ 
+ private:
+-    static inline qint64 nullJd() { return std::numeric_limits<qint64>::min(); }
++	// CHANGES SCHLEUNIGER AG, April 2015 :: START [resolve NOMINMAX compiler error in QDateTime (QTBUG-31469)]
++    static inline qint64 nullJd() { return (std::numeric_limits<qint64>::min)(); }
++	// CHANGES SCHLEUNIGER AG, April 2015 :: END
+     static inline qint64 minJd() { return Q_INT64_C(-784350574879); }
+     static inline qint64 maxJd() { return Q_INT64_C( 784354017364); }
+ 
+Index: qtbase/src/plugins/platforms/xcb/xcb-plugin.pro
+===================================================================
+--- qtbase/src/plugins/platforms/xcb/xcb-plugin.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/xcb/xcb-plugin.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qxcb
++TARGET = qxcb531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QXcbIntegrationPlugin
+Index: qtbase/src/plugins/platforms/minimalegl/minimalegl.pro
+===================================================================
+--- qtbase/src/plugins/platforms/minimalegl/minimalegl.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/minimalegl/minimalegl.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qminimalegl
++TARGET = qminimalegl531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QMinimalEglIntegrationPlugin
+Index: qtbase/src/plugins/platforms/android/android.pro
+===================================================================
+--- qtbase/src/plugins/platforms/android/android.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/android/android.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtforandroid
++TARGET = qtforandroid531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ 
+Index: qtbase/src/plugins/platforms/directfb/directfb.pro
+===================================================================
+--- qtbase/src/plugins/platforms/directfb/directfb.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/directfb/directfb.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qdirectfb
++TARGET = qdirectfb531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QDirectFbIntegrationPlugin
+Index: qtbase/src/plugins/platforms/cocoa/cocoa.pro
+===================================================================
+--- qtbase/src/plugins/platforms/cocoa/cocoa.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/cocoa/cocoa.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qcocoa
++TARGET = qcocoa531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QCocoaIntegrationPlugin
+Index: qtbase/src/plugins/platforms/minimal/minimal.pro
+===================================================================
+--- qtbase/src/plugins/platforms/minimal/minimal.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/minimal/minimal.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qminimal
++TARGET = qminimal531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QMinimalIntegrationPlugin
+Index: qtbase/src/plugins/platforms/windows/qwindowsole.cpp
+===================================================================
+--- qtbase/src/plugins/platforms/windows/qwindowsole.cpp	(Revision 28)
++++ qtbase/src/plugins/platforms/windows/qwindowsole.cpp	(Revision 30)
+@@ -319,6 +319,8 @@
+ {
+     LPMALLOC pmalloc;
+ 
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (CoGetMalloc(MEMCTX_TASK, &pmalloc) == NOERROR) {
+         for (int idx = 0; idx < m_lpfmtetcs.count(); ++idx) {
+             LPFORMATETC tmpetc = m_lpfmtetcs.at(idx);
+@@ -329,6 +331,8 @@
+ 
+         pmalloc->Release();
+     }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     m_lpfmtetcs.clear();
+ }
+ 
+@@ -458,7 +462,11 @@
+     if (src->ptd) {
+         LPMALLOC pmalloc;
+ 
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+         if (CoGetMalloc(MEMCTX_TASK, &pmalloc) != NOERROR)
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+             return false;
+ 
+         pmalloc->Alloc(src->ptd->tdSize);
+Index: qtbase/src/plugins/platforms/windows/qwindowsdialoghelpers.cpp
+===================================================================
+--- qtbase/src/plugins/platforms/windows/qwindowsdialoghelpers.cpp	(Revision 28)
++++ qtbase/src/plugins/platforms/windows/qwindowsdialoghelpers.cpp	(Revision 30)
+@@ -76,6 +76,13 @@
+ #include <shlobj.h>
+ #include <shlwapi.h>
+ 
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifdef Q_OS_WINCE
++class IShellItem;
++class IShellItemArray;
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
++
+ // #define USE_NATIVE_COLOR_DIALOG /* Testing purposes only */
+ 
+ #ifdef Q_CC_MINGW  /* Add missing declarations for MinGW */
+@@ -800,6 +807,8 @@
+ 
+ class QWindowsNativeFileDialogBase;
+ 
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+ class QWindowsNativeFileDialogEventHandler : public IFileDialogEvents
+ {
+ public:
+@@ -857,6 +866,8 @@
+     eventHandler->Release();
+     return result;
+ }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ 
+ /*!
+     \class QWindowsNativeFileDialogBase
+@@ -919,7 +930,11 @@
+     explicit QWindowsNativeFileDialogBase(const QWindowsFileDialogSharedData &data);
+     bool init(const CLSID &clsId, const IID &iid);
+     void setDefaultSuffixSys(const QString &s);
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     inline IFileDialog * fileDialog() const { return m_fileDialog; }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     static QString itemPath(IShellItem *item);
+     static QList<QUrl> libraryItemFolders(IShellItem *item);
+     static QString libraryItemDefaultSaveFolder(IShellItem *item);
+@@ -930,8 +945,12 @@
+     QWindowsFileDialogSharedData &data() { return m_data; }
+ 
+ private:
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     IFileDialog *m_fileDialog;
+     IFileDialogEvents *m_dialogEvents;
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     DWORD m_cookie;
+     QStringList m_nameFilters;
+     bool m_hideFiltersDetails;
+@@ -940,14 +959,25 @@
+     QString m_title;
+ };
+ 
+-QWindowsNativeFileDialogBase::QWindowsNativeFileDialogBase(const QWindowsFileDialogSharedData &data) :
+-    m_fileDialog(0), m_dialogEvents(0), m_cookie(0), m_hideFiltersDetails(false),
+-    m_hasDefaultSuffix(false), m_data(data)
++QWindowsNativeFileDialogBase::QWindowsNativeFileDialogBase(const QWindowsFileDialogSharedData &data)
++    : m_cookie(0)
++    , m_hideFiltersDetails(false)
++    , m_hasDefaultSuffix(false)
++    , m_data(data)
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
++    , m_fileDialog(0)
++    , m_dialogEvents(0)
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
++
+ {
+ }
+ 
+ QWindowsNativeFileDialogBase::~QWindowsNativeFileDialogBase()
+ {
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (m_dialogEvents && m_fileDialog)
+         m_fileDialog->Unadvise(m_cookie);
+     if (m_dialogEvents)
+@@ -954,10 +984,14 @@
+         m_dialogEvents->Release();
+     if (m_fileDialog)
+         m_fileDialog->Release();
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ bool QWindowsNativeFileDialogBase::init(const CLSID &clsId, const IID &iid)
+ {
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     HRESULT hr = CoCreateInstance(clsId, NULL, CLSCTX_INPROC_SERVER,
+                                   iid, reinterpret_cast<void **>(&m_fileDialog));
+     if (FAILED(hr)) {
+@@ -974,14 +1008,20 @@
+         return false;
+     }
+     qCDebug(lcQpaDialogs) << __FUNCTION__ << m_fileDialog << m_dialogEvents <<  m_cookie;
+-
+     return true;
++#endif
++    return false;
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ void QWindowsNativeFileDialogBase::setWindowTitle(const QString &title)
+ {
+     m_title = title;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     m_fileDialog->SetTitle(reinterpret_cast<const wchar_t *>(title.utf16()));
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ IShellItem *QWindowsNativeFileDialogBase::shellItem(const QString &path)
+@@ -1004,6 +1044,8 @@
+ 
+ void QWindowsNativeFileDialogBase::setDirectory(const QString &directory)
+ {
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (!directory.isEmpty()) {
+         if (IShellItem *psi = QWindowsNativeFileDialogBase::shellItem(directory)) {
+             m_fileDialog->SetFolder(psi);
+@@ -1010,6 +1052,8 @@
+             psi->Release();
+         }
+     }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ QString QWindowsNativeFileDialogBase::directory() const
+@@ -1027,6 +1071,8 @@
+     qCDebug(lcQpaDialogs) << '>' << __FUNCTION__;
+     // Show() blocks until the user closes the dialog, the dialog window
+     // gets a WM_CLOSE or the parent window is destroyed.
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     const HRESULT hr = m_fileDialog->Show(owner);
+     QWindowsDialogs::eatMouseMove();
+     qCDebug(lcQpaDialogs) << '<' << __FUNCTION__ << " returns " << hex << hr;
+@@ -1035,6 +1081,8 @@
+     } else {
+         emit rejected();
+     }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ void QWindowsNativeFileDialogBase::setMode(QFileDialogOptions::FileMode mode,
+@@ -1041,6 +1089,8 @@
+                                            QFileDialogOptions::AcceptMode acceptMode,
+                                            QFileDialogOptions::FileDialogOptions options)
+ {
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     DWORD flags = FOS_PATHMUSTEXIST | FOS_FORCESHOWHIDDEN;
+     if (options & QFileDialogOptions::DontResolveSymlinks)
+         flags |= FOS_NODEREFERENCELINKS;
+@@ -1068,6 +1118,8 @@
+ 
+     if (FAILED(m_fileDialog->SetOptions(flags)))
+         qErrnoWarning("%s: SetOptions() failed", __FUNCTION__);
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ #if !defined(Q_OS_WINCE) && defined(__IShellLibrary_INTERFACE_DEFINED__) // Windows SDK 7
+@@ -1139,6 +1191,8 @@
+ 
+ QString QWindowsNativeFileDialogBase::itemPath(IShellItem *item)
+ {
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     SFGAOF attributes = 0;
+     // Check whether it has a file system representation?
+     if (FAILED(item->GetAttributes(SFGAO_FILESYSTEM, &attributes)))
+@@ -1155,6 +1209,8 @@
+     // Check for a "Library" item
+     if ((QSysInfo::windowsVersion() & QSysInfo::WV_NT_based) && QSysInfo::windowsVersion() >= QSysInfo::WV_WINDOWS7)
+         return QWindowsNativeFileDialogBase::libraryItemDefaultSaveFolder(item);
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return QString();
+ }
+ 
+@@ -1162,6 +1218,8 @@
+                                             QList<QUrl> *result /* = 0 */)
+ {
+     DWORD itemCount = 0;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (result)
+         result->clear();
+     if (FAILED(items->GetCount(&itemCount)))
+@@ -1174,6 +1232,8 @@
+                 result->push_back(QUrl::fromLocalFile(QWindowsNativeFileDialogBase::itemPath(item)));
+         }
+    }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return itemCount;
+ }
+ 
+@@ -1224,6 +1284,8 @@
+ {
+     /* Populates an array of COMDLG_FILTERSPEC from list of filters,
+      * store the strings in a flat, contiguous buffer. */
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     m_nameFilters = filters;
+     int totalStringLength = 0;
+     const QList<FilterSpec> specs = filterSpecs(filters, m_hideFiltersDetails, &totalStringLength);
+@@ -1250,8 +1312,9 @@
+         ptr += specs[i].filter.toWCharArray(ptr);
+         *ptr++ = 0;
+     }
+-
+     m_fileDialog->SetFileTypes(size, comFilterSpec.data());
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ void QWindowsNativeFileDialogBase::setDefaultSuffix(const QString &s)
+@@ -1266,7 +1329,11 @@
+     // filter ('*'). If this parameter is non-empty and the current filter has a suffix,
+     // the dialog will append the filter's suffix.
+     wchar_t *wSuffix = const_cast<wchar_t *>(reinterpret_cast<const wchar_t *>(s.utf16()));
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     m_fileDialog->SetDefaultExtension(wSuffix);
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ void QWindowsNativeFileDialogBase::setLabelText(QFileDialogOptions::DialogLabel l, const QString &text)
+@@ -1274,6 +1341,8 @@
+     wchar_t *wText = const_cast<wchar_t *>(reinterpret_cast<const wchar_t *>(text.utf16()));
+     switch (l) {
+         break;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     case QFileDialogOptions::FileName:
+         m_fileDialog->SetFileNameLabel(wText);
+         break;
+@@ -1280,6 +1349,8 @@
+     case QFileDialogOptions::Accept:
+         m_fileDialog->SetOkButtonLabel(wText);
+         break;
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     case QFileDialogOptions::LookIn:
+     case QFileDialogOptions::Reject:
+     case QFileDialogOptions::FileType:
+@@ -1290,7 +1361,11 @@
+ 
+ void QWindowsNativeFileDialogBase::selectFile(const QString &fileName) const
+ {
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     m_fileDialog->SetFileName((wchar_t*)fileName.utf16());
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ // Return the index of the selected filter, accounting for QFileDialog
+@@ -1318,17 +1393,25 @@
+                  qPrintable(m_nameFilters.join(QStringLiteral(", "))));
+         return;
+     }
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     m_fileDialog->SetFileTypeIndex(index + 1); // one-based.
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
+ QString QWindowsNativeFileDialogBase::selectedNameFilter() const
+ {
+     UINT uIndex = 0;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (SUCCEEDED(m_fileDialog->GetFileTypeIndex(&uIndex))) {
+         const int index = uIndex - 1; // one-based
+         if (index < m_nameFilters.size())
+             return m_nameFilters.at(index);
+     }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return QString();
+ }
+ 
+@@ -1365,6 +1448,8 @@
+ 
+ void QWindowsNativeFileDialogBase::close()
+ {
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     m_fileDialog->Close(S_OK);
+ #ifndef Q_OS_WINCE
+     // IFileDialog::Close() does not work unless invoked from a callback.
+@@ -1374,8 +1459,12 @@
+     if (hwnd && IsWindowVisible(hwnd))
+         PostMessageW(hwnd, WM_CLOSE, 0, 0);
+ #endif // !Q_OS_WINCE
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ }
+ 
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+ HRESULT QWindowsNativeFileDialogEventHandler::OnFolderChanging(IFileDialog *, IShellItem *item)
+ {
+     m_nativeFileDialog->onFolderChange(item);
+@@ -1398,6 +1487,8 @@
+ {
+     return m_nativeFileDialog->onFileOk() ? S_OK : S_FALSE;
+ }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ 
+ /*!
+     \class QWindowsNativeSaveFileDialog
+@@ -1456,8 +1547,12 @@
+ {
+     QList<QUrl> result;
+     IShellItem *item = 0;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (SUCCEEDED(fileDialog()->GetResult(&item)) && item)
+         result.push_back(QUrl::fromLocalFile(QWindowsNativeFileDialogBase::itemPath(item)));
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return result;
+ }
+ 
+@@ -1465,9 +1560,13 @@
+ {
+     QList<QUrl> result;
+     IShellItem *item = 0;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     const HRESULT hr = fileDialog()->GetCurrentSelection(&item);
+     if (SUCCEEDED(hr) && item)
+         result.push_back(QUrl::fromLocalFile(QWindowsNativeSaveFileDialog::itemPath(item)));
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return result;
+ }
+ 
+@@ -1490,8 +1589,12 @@
+     virtual QList<QUrl> dialogResult() const;
+ 
+ private:
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     inline IFileOpenDialog *openFileDialog() const
+         { return static_cast<IFileOpenDialog *>(fileDialog()); }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+ };
+ 
+ QList<QUrl> QWindowsNativeOpenFileDialog::dialogResult() const
+@@ -1498,8 +1601,12 @@
+ {
+     QList<QUrl> result;
+     IShellItemArray *items = 0;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (SUCCEEDED(openFileDialog()->GetResults(&items)) && items)
+         QWindowsNativeFileDialogBase::itemPaths(items, &result);
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return result;
+ }
+ 
+@@ -1507,9 +1614,13 @@
+ {
+     QList<QUrl> result;
+     IShellItemArray *items = 0;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     const HRESULT hr = openFileDialog()->GetSelectedItems(&items);
+     if (SUCCEEDED(hr) && items)
+         QWindowsNativeFileDialogBase::itemPaths(items, &result);
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return result;
+ }
+ 
+@@ -1523,6 +1634,8 @@
+                                                                    const QWindowsFileDialogSharedData &data)
+ {
+     QWindowsNativeFileDialogBase *result = 0;
++// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
++#ifndef Q_OS_WINCE
+     if (am == QFileDialogOptions::AcceptOpen) {
+         result = new QWindowsNativeOpenFileDialog(data);
+         if (!result->init(CLSID_FileOpenDialog, IID_IFileOpenDialog)) {
+@@ -1536,6 +1649,8 @@
+             return 0;
+         }
+     }
++#endif
++// CHANGES SCHLEUNIGER AG, October 2015 :: END
+     return result;
+ }
+ 
+Index: qtbase/src/plugins/platforms/windows/windows.pro
+===================================================================
+--- qtbase/src/plugins/platforms/windows/windows.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/windows/windows.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qwindows
++TARGET = qwindows531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QWindowsIntegrationPlugin
+Index: qtbase/src/plugins/platforms/kms/kms.pro
+===================================================================
+--- qtbase/src/plugins/platforms/kms/kms.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/kms/kms.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qkms
++TARGET = qkms531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QKmsIntegrationPlugin
+Index: qtbase/src/plugins/platforms/ios/ios.pro
+===================================================================
+--- qtbase/src/plugins/platforms/ios/ios.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/ios/ios.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qios
++TARGET = qios531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QIOSIntegrationPlugin
+Index: qtbase/src/plugins/platforms/eglfs/eglfs.pro
+===================================================================
+--- qtbase/src/plugins/platforms/eglfs/eglfs.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/eglfs/eglfs.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qeglfs
++TARGET = qeglfs531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QEglFSIntegrationPlugin
+Index: qtbase/src/plugins/platforms/direct2d/direct2d.pro
+===================================================================
+--- qtbase/src/plugins/platforms/direct2d/direct2d.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/direct2d/direct2d.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qdirect2d
++TARGET = qdirect2d531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QWindowsDirect2DIntegrationPlugin
+Index: qtbase/src/plugins/platforms/openwfd/openwf.pro
+===================================================================
+--- qtbase/src/plugins/platforms/openwfd/openwf.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/openwfd/openwf.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qopenwf
++TARGET = qopenwf531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QOpenWFDIntegrationPlugin
+Index: qtbase/src/plugins/platforms/winrt/winrt.pro
+===================================================================
+--- qtbase/src/plugins/platforms/winrt/winrt.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/winrt/winrt.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qwinrt
++TARGET = qwinrt531V3-WCE6
+ CONFIG -= precompile_header
+ 
+ # For Windows Phone 8 we have to deploy fonts together with the application as DirectWrite
+Index: qtbase/src/plugins/platforms/qnx/qnx.pro
+===================================================================
+--- qtbase/src/plugins/platforms/qnx/qnx.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/qnx/qnx.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qqnx
++TARGET = qqnx531V3-WCE6
+ 
+ QT += platformsupport-private core-private gui-private
+ 
+Index: qtbase/src/plugins/platforms/linuxfb/linuxfb.pro
+===================================================================
+--- qtbase/src/plugins/platforms/linuxfb/linuxfb.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/linuxfb/linuxfb.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qlinuxfb
++TARGET = qlinuxfb531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QLinuxFbIntegrationPlugin
+Index: qtbase/src/plugins/platforms/offscreen/offscreen.pro
+===================================================================
+--- qtbase/src/plugins/platforms/offscreen/offscreen.pro	(Revision 28)
++++ qtbase/src/plugins/platforms/offscreen/offscreen.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qoffscreen
++TARGET = qoffscreen531V3-WCE6
+ 
+ PLUGIN_TYPE = platforms
+ PLUGIN_CLASS_NAME = QOffscreenIntegrationPlugin
+Index: qtbase/src/plugins/printsupport/cocoa/cocoa.pro
+===================================================================
+--- qtbase/src/plugins/printsupport/cocoa/cocoa.pro	(Revision 28)
++++ qtbase/src/plugins/printsupport/cocoa/cocoa.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = cocoaprintersupport
++TARGET = cocoaprintersupport531V3-WCE6
+ MODULE = cocoaprintersupport
+ PLUGIN_TYPE = printsupport
+ PLUGIN_CLASS_NAME = QCocoaPrinterSupportPlugin
+Index: qtbase/src/plugins/printsupport/cups/cups.pro
+===================================================================
+--- qtbase/src/plugins/printsupport/cups/cups.pro	(Revision 28)
++++ qtbase/src/plugins/printsupport/cups/cups.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = cupsprintersupport
++TARGET = cupsprintersupport531V3-WCE6
+ MODULE = cupsprintersupport
+ PLUGIN_TYPE = printsupport
+ PLUGIN_CLASS_NAME = QCupsPrinterSupportPlugin
+Index: qtbase/src/plugins/printsupport/windows/windows.pro
+===================================================================
+--- qtbase/src/plugins/printsupport/windows/windows.pro	(Revision 28)
++++ qtbase/src/plugins/printsupport/windows/windows.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = windowsprintersupport
++TARGET = windowsprintersupport531V3-WCE6
+ MODULE = windowsprintersupport
+ PLUGIN_TYPE = printsupport
+ PLUGIN_CLASS_NAME = QWindowsPrinterSupportPlugin
+Index: qtbase/src/plugins/platformthemes/gtk2/gtk2.pro
+===================================================================
+--- qtbase/src/plugins/platformthemes/gtk2/gtk2.pro	(Revision 28)
++++ qtbase/src/plugins/platformthemes/gtk2/gtk2.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qgtk2
++TARGET = qgtk2531V3-WCE6
+ 
+ PLUGIN_TYPE = platformthemes
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/generic/evdevtouch/evdevtouch.pro
+===================================================================
+--- qtbase/src/plugins/generic/evdevtouch/evdevtouch.pro	(Revision 28)
++++ qtbase/src/plugins/generic/evdevtouch/evdevtouch.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qevdevtouchplugin
++TARGET = qevdevtouchplugin531V3-WCE6
+ 
+ PLUGIN_TYPE = generic
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/generic/meego/meego.pro
+===================================================================
+--- qtbase/src/plugins/generic/meego/meego.pro	(Revision 28)
++++ qtbase/src/plugins/generic/meego/meego.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qmeegointegration
++TARGET = qmeegointegration531V3-WCE6
+ 
+ PLUGIN_TYPE = generic
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/generic/tslib/tslib.pro
+===================================================================
+--- qtbase/src/plugins/generic/tslib/tslib.pro	(Revision 28)
++++ qtbase/src/plugins/generic/tslib/tslib.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qtslibplugin
++TARGET = qtslibplugin531V3-WCE6
+ 
+ PLUGIN_TYPE = generic
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/generic/evdevmouse/evdevmouse.pro
+===================================================================
+--- qtbase/src/plugins/generic/evdevmouse/evdevmouse.pro	(Revision 28)
++++ qtbase/src/plugins/generic/evdevmouse/evdevmouse.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qevdevmouseplugin
++TARGET = qevdevmouseplugin531V3-WCE6
+ 
+ PLUGIN_TYPE = generic
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/generic/evdevtablet/evdevtablet.pro
+===================================================================
+--- qtbase/src/plugins/generic/evdevtablet/evdevtablet.pro	(Revision 28)
++++ qtbase/src/plugins/generic/evdevtablet/evdevtablet.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qevdevtabletplugin
++TARGET = qevdevtabletplugin531V3-WCE6
+ 
+ PLUGIN_TYPE = generic
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/generic/evdevkeyboard/evdevkeyboard.pro
+===================================================================
+--- qtbase/src/plugins/generic/evdevkeyboard/evdevkeyboard.pro	(Revision 28)
++++ qtbase/src/plugins/generic/evdevkeyboard/evdevkeyboard.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qevdevkeyboardplugin
++TARGET = qevdevkeyboardplugin531V3-WCE6
+ 
+ PLUGIN_TYPE = generic
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/platforminputcontexts/ibus/ibus.pro
+===================================================================
+--- qtbase/src/plugins/platforminputcontexts/ibus/ibus.pro	(Revision 28)
++++ qtbase/src/plugins/platforminputcontexts/ibus/ibus.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = ibusplatforminputcontextplugin
++TARGET = ibusplatforminputcontextplugin531V3-WCE6
+ 
+ PLUGIN_TYPE = platforminputcontexts
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/platforminputcontexts/compose/compose.pro
+===================================================================
+--- qtbase/src/plugins/platforminputcontexts/compose/compose.pro	(Revision 28)
++++ qtbase/src/plugins/platforminputcontexts/compose/compose.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = composeplatforminputcontextplugin
++TARGET = composeplatforminputcontextplugin531V3-WCE6
+ 
+ PLUGIN_TYPE = platforminputcontexts
+ PLUGIN_EXTENDS = -
+Index: qtbase/src/plugins/accessible/widgets/widgets.pro
+===================================================================
+--- qtbase/src/plugins/accessible/widgets/widgets.pro	(Revision 28)
++++ qtbase/src/plugins/accessible/widgets/widgets.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qtaccessiblewidgets
++TARGET  = qtaccessiblewidgets531V3-WCE6
+ 
+ PLUGIN_TYPE = accessible
+ PLUGIN_EXTENDS = widgets
+Index: qtbase/src/plugins/imageformats/ico/ico.pro
+===================================================================
+--- qtbase/src/plugins/imageformats/ico/ico.pro	(Revision 28)
++++ qtbase/src/plugins/imageformats/ico/ico.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qico
++TARGET  = qico531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QICOPlugin
+Index: qtbase/src/plugins/imageformats/gif/gif.pro
+===================================================================
+--- qtbase/src/plugins/imageformats/gif/gif.pro	(Revision 28)
++++ qtbase/src/plugins/imageformats/gif/gif.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qgif
++TARGET  = qgif531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QGifPlugin
+Index: qtbase/src/plugins/imageformats/jpeg/jpeg.pro
+===================================================================
+--- qtbase/src/plugins/imageformats/jpeg/jpeg.pro	(Revision 28)
++++ qtbase/src/plugins/imageformats/jpeg/jpeg.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qjpeg
++TARGET  = qjpeg531V3-WCE6
+ 
+ PLUGIN_TYPE = imageformats
+ PLUGIN_CLASS_NAME = QJpegPlugin
+Index: qtbase/src/plugins/sqldrivers/oci/oci.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/oci/oci.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/oci/oci.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqloci
++TARGET = qsqloci531V3-WCE6
+ 
+ SOURCES = main.cpp
+ OTHER_FILES += oci.json
+Index: qtbase/src/plugins/sqldrivers/tds/tds.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/tds/tds.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/tds/tds.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqltds
++TARGET = qsqltds531V3-WCE6
+ 
+ SOURCES = main.cpp
+ OTHER_FILES += tds.json
+Index: qtbase/src/plugins/sqldrivers/psql/psql.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/psql/psql.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/psql/psql.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqlpsql
++TARGET = qsqlpsql531V3-WCE6
+ 
+ SOURCES = main.cpp
+ OTHER_FILES += psql.json
+Index: qtbase/src/plugins/sqldrivers/sqlite/sqlite.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/sqlite/sqlite.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/sqlite/sqlite.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqlite
++TARGET = qsqlite531V3-WCE6
+ 
+ SOURCES = smain.cpp
+ OTHER_FILES += sqlite.json
+Index: qtbase/src/plugins/sqldrivers/ibase/ibase.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/ibase/ibase.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/ibase/ibase.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqlibase
++TARGET = qsqlibase531V3-WCE6
+ 
+ SOURCES = main.cpp
+ OTHER_FILES += ibase.json
+Index: qtbase/src/plugins/sqldrivers/sqlite2/sqlite2.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/sqlite2/sqlite2.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/sqlite2/sqlite2.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqlite2
++TARGET = qsqlite2531V3-WCE6
+ 
+ SOURCES = smain.cpp
+ OTHER_FILES += sqlite2.json
+Index: qtbase/src/plugins/sqldrivers/mysql/mysql.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/mysql/mysql.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/mysql/mysql.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqlmysql
++TARGET = qsqlmysql531V3-WCE6
+ 
+ SOURCES = main.cpp
+ OTHER_FILES += mysql.json
+Index: qtbase/src/plugins/sqldrivers/db2/db2.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/db2/db2.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/db2/db2.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqldb2
++TARGET = qsqldb2531V3-WCE6
+ 
+ SOURCES = main.cpp
+ OTHER_FILES += db2.json
+Index: qtbase/src/plugins/sqldrivers/odbc/odbc.pro
+===================================================================
+--- qtbase/src/plugins/sqldrivers/odbc/odbc.pro	(Revision 28)
++++ qtbase/src/plugins/sqldrivers/odbc/odbc.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qsqlodbc
++TARGET = qsqlodbc531V3-WCE6
+ 
+ SOURCES = main.cpp
+ OTHER_FILES += odbc.json
+Index: qtbase/src/plugins/bearer/corewlan/corewlan.pro
+===================================================================
+--- qtbase/src/plugins/bearer/corewlan/corewlan.pro	(Revision 28)
++++ qtbase/src/plugins/bearer/corewlan/corewlan.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qcorewlanbearer
++TARGET = qcorewlanbearer531V3-WCE6
+ 
+ PLUGIN_TYPE = bearer
+ PLUGIN_CLASS_NAME = QCoreWlanEnginePlugin
+Index: qtbase/src/plugins/bearer/nla/nla.pro
+===================================================================
+--- qtbase/src/plugins/bearer/nla/nla.pro	(Revision 28)
++++ qtbase/src/plugins/bearer/nla/nla.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qnlabearer
++TARGET = qnlabearer531V3-WCE6
+ 
+ PLUGIN_TYPE = bearer
+ PLUGIN_CLASS_NAME = QNlaEnginePlugin
+Index: qtbase/src/plugins/bearer/generic/generic.pro
+===================================================================
+--- qtbase/src/plugins/bearer/generic/generic.pro	(Revision 28)
++++ qtbase/src/plugins/bearer/generic/generic.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qgenericbearer
++TARGET = qgenericbearer531V3-WCE6
+ 
+ PLUGIN_TYPE = bearer
+ PLUGIN_CLASS_NAME = QGenericEnginePlugin
+Index: qtbase/src/plugins/bearer/blackberry/blackberry.pro
+===================================================================
+--- qtbase/src/plugins/bearer/blackberry/blackberry.pro	(Revision 28)
++++ qtbase/src/plugins/bearer/blackberry/blackberry.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qbbbearer
++TARGET = qbbbearer531V3-WCE6
+ 
+ PLUGIN_TYPE = bearer
+ PLUGIN_CLASS_NAME = QBBEnginePlugin
+Index: qtbase/src/plugins/bearer/networkmanager/networkmanager.pro
+===================================================================
+--- qtbase/src/plugins/bearer/networkmanager/networkmanager.pro	(Revision 28)
++++ qtbase/src/plugins/bearer/networkmanager/networkmanager.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qnmbearer
++TARGET = qnmbearer531V3-WCE6
+ 
+ PLUGIN_TYPE = bearer
+ PLUGIN_CLASS_NAME = QNetworkManagerEnginePlugin
+Index: qtbase/src/plugins/bearer/nativewifi/nativewifi.pro
+===================================================================
+--- qtbase/src/plugins/bearer/nativewifi/nativewifi.pro	(Revision 28)
++++ qtbase/src/plugins/bearer/nativewifi/nativewifi.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qnativewifibearer
++TARGET = qnativewifibearer531V3-WCE6
+ 
+ PLUGIN_TYPE = bearer
+ PLUGIN_CLASS_NAME = QNativeWifiEnginePlugin
+Index: qtbase/src/plugins/bearer/connman/connman.pro
+===================================================================
+--- qtbase/src/plugins/bearer/connman/connman.pro	(Revision 28)
++++ qtbase/src/plugins/bearer/connman/connman.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qconnmanbearer
++TARGET = qconnmanbearer531V3-WCE6
+ 
+ PLUGIN_TYPE = bearer
+ PLUGIN_CLASS_NAME = QConnmanEnginePlugin
+Index: qtdeclarative/src/3rdparty/double-conversion/double-conversion.cc
+===================================================================
+--- qtdeclarative/src/3rdparty/double-conversion/double-conversion.cc	(Revision 28)
++++ qtdeclarative/src/3rdparty/double-conversion/double-conversion.cc	(Revision 30)
+@@ -25,6 +25,10 @@
+ // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
++// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
++#define _CRT_BANNED_DEPRECATE( x )
++// CHANGES SCHLEUNIGER AG, April 2015 :: END
++
+ #include <limits.h>
+ #include <math.h>
+ 
+Index: qtdeclarative/src/qml/compiler/qqmltypecompiler.cpp
+===================================================================
+--- qtdeclarative/src/qml/compiler/qqmltypecompiler.cpp	(Revision 28)
++++ qtdeclarative/src/qml/compiler/qqmltypecompiler.cpp	(Revision 30)
+@@ -39,6 +39,10 @@
+ **
+ ****************************************************************************/
+ 
++// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
++#define _CRT_BANNED_DEPRECATE( x )
++// CHANGES SCHLEUNIGER AG, April 2015 :: END
++
+ #include "qqmltypecompiler_p.h"
+ 
+ #include <private/qqmlirbuilder_p.h>
+Index: qtdeclarative/src/qml/compiler/qv4isel_moth.cpp
+===================================================================
+--- qtdeclarative/src/qml/compiler/qv4isel_moth.cpp	(Revision 28)
++++ qtdeclarative/src/qml/compiler/qv4isel_moth.cpp	(Revision 30)
+@@ -39,6 +39,10 @@
+ **
+ ****************************************************************************/
+ 
++// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
++#define _CRT_BANNED_DEPRECATE( x )
++// CHANGES SCHLEUNIGER AG, April 2015 :: END
++
+ #include "qv4isel_util_p.h"
+ #include "qv4isel_moth_p.h"
+ #include "qv4vme_moth_p.h"
+Index: qtdeclarative/src/qml/jsruntime/qv4persistent.cpp
+===================================================================
+--- qtdeclarative/src/qml/jsruntime/qv4persistent.cpp	(Revision 28)
++++ qtdeclarative/src/qml/jsruntime/qv4persistent.cpp	(Revision 30)
+@@ -39,6 +39,10 @@
+ **
+ ****************************************************************************/
+ 
++// CHANGES SCHLEUNIGER AG, April 2015 :: START [add "#define _CRT_BANNED_DEPRECATE( x )" in files to resolve wince sdk compiler errors]
++#define _CRT_BANNED_DEPRECATE( x )
++// CHANGES SCHLEUNIGER AG, April 2015 :: END
++
+ #include "qv4persistent_p.h"
+ #include "qv4mm_p.h"
+ 
+Index: qtdeclarative/src/plugins/accessible/quick/quick.pro
+===================================================================
+--- qtdeclarative/src/plugins/accessible/quick/quick.pro	(Revision 28)
++++ qtdeclarative/src/plugins/accessible/quick/quick.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET  = qtaccessiblequick
++TARGET  = qtaccessiblequick531V3-WCE6
+ 
+ PLUGIN_TYPE = accessible
+ PLUGIN_EXTENDS = quick
+Index: qtdeclarative/src/plugins/qmltooling/qmldbg_tcp/qmldbg_tcp.pro
+===================================================================
+--- qtdeclarative/src/plugins/qmltooling/qmldbg_tcp/qmldbg_tcp.pro	(Revision 28)
++++ qtdeclarative/src/plugins/qmltooling/qmldbg_tcp/qmldbg_tcp.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qmldbg_tcp
++TARGET = qmldbg_tcp531V3-WCE6
+ QT = qml-private
+ 
+ PLUGIN_TYPE = qmltooling
+Index: qtdeclarative/src/plugins/qmltooling/qmldbg_qtquick2/qmldbg_qtquick2.pro
+===================================================================
+--- qtdeclarative/src/plugins/qmltooling/qmldbg_qtquick2/qmldbg_qtquick2.pro	(Revision 28)
++++ qtdeclarative/src/plugins/qmltooling/qmldbg_qtquick2/qmldbg_qtquick2.pro	(Revision 30)
+@@ -1,4 +1,4 @@
+-TARGET = qmldbg_qtquick2
++TARGET = qmldbg_qtquick2531V3-WCE6
+ QT       += qml-private quick-private core-private gui-private
+ 
+ PLUGIN_TYPE = qmltooling

@@ -1,4 +1,4 @@
-TARGET = qevdevtouchplugin
+TARGET = qevdevtouchplugin531V3-WCE6
 
 PLUGIN_TYPE = generic
 PLUGIN_EXTENDS = -

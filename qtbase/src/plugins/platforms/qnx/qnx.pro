@@ -1,4 +1,4 @@
-TARGET = qqnx
+TARGET = qqnx531V3-WCE6
 
 QT += platformsupport-private core-private gui-private
 

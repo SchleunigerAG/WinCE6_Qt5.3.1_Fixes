@@ -1,4 +1,4 @@
-TARGET = qsqlpsql
+TARGET = qsqlpsql531V3-WCE6
 
 SOURCES = main.cpp
 OTHER_FILES += psql.json

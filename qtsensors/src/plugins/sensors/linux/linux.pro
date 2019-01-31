@@ -1,4 +1,4 @@
-TARGET = qtsensors_linuxsys
+TARGET = qtsensors_linuxsys531V3-WCE6
 QT = core sensors
 
 PLUGIN_TYPE = sensors

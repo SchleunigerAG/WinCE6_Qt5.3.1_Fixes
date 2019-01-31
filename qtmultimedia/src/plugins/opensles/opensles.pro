@@ -1,4 +1,4 @@
-TARGET = qtaudio_opensles
+TARGET = qtaudio_opensles531V3-WCE6
 QT += multimedia-private
 
 PLUGIN_TYPE = audio

@@ -1,4 +1,4 @@
-TARGET = qtmedia_v4lengine
+TARGET = qtmedia_v4lengine531V3-WCE6
 QT += multimedia-private
 
 PLUGIN_TYPE = mediaservice

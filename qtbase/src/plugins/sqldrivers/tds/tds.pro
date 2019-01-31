@@ -1,4 +1,4 @@
-TARGET = qsqltds
+TARGET = qsqltds531V3-WCE6
 
 SOURCES = main.cpp
 OTHER_FILES += tds.json

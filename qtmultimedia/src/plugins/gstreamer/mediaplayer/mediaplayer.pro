@@ -1,4 +1,4 @@
-TARGET = gstmediaplayer
+TARGET = gstmediaplayer531V3-WCE6
 
 PLUGIN_TYPE = mediaservice
 PLUGIN_CLASS_NAME = QGstreamerPlayerServicePlugin

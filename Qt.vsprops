@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Qt-5.3.1-V3-WinCE60Colibri-msvc2008"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(QTDIR)\include"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="$(QTDIR)\lib"
+	/>
+	<UserMacro
+		Name="QTINFIX"
+		Value="531V3-WCE6"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="QTDIR"
+		Value="%SVNDATA_ROOT%\Qt\Tags\5.3.1-V3-WinCE60Colibri-msvc2008\qtbase"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="QTTOOLSDIR"
+		Value="%SVNDATA_ROOT%\Qt\Tags\5.3.1-V1-Win32-msvc2008\qtbase"
+		PerformEnvironmentSet="true"
+	/>
+</VisualStudioPropertySheet>

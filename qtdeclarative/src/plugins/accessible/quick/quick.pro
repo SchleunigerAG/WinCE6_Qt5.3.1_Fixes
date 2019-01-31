@@ -1,4 +1,4 @@
-TARGET  = qtaccessiblequick
+TARGET  = qtaccessiblequick531V3-WCE6
 
 PLUGIN_TYPE = accessible
 PLUGIN_EXTENDS = quick

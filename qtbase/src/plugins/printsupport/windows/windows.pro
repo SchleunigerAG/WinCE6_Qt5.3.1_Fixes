@@ -1,4 +1,4 @@
-TARGET = windowsprintersupport
+TARGET = windowsprintersupport531V3-WCE6
 MODULE = windowsprintersupport
 PLUGIN_TYPE = printsupport
 PLUGIN_CLASS_NAME = QWindowsPrinterSupportPlugin

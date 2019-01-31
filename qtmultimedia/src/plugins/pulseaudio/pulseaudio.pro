@@ -1,4 +1,4 @@
-TARGET = qtmedia_pulse
+TARGET = qtmedia_pulse531V3-WCE6
 QT += multimedia-private
 
 PLUGIN_TYPE = audio

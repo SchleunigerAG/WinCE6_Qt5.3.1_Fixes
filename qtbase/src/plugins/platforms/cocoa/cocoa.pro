@@ -1,4 +1,4 @@
-TARGET = qcocoa
+TARGET = qcocoa531V3-WCE6
 
 PLUGIN_TYPE = platforms
 PLUGIN_CLASS_NAME = QCocoaIntegrationPlugin

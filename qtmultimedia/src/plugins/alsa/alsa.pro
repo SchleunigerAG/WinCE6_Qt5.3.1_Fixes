@@ -1,4 +1,4 @@
-TARGET = qtaudio_alsa
+TARGET = qtaudio_alsa531V3-WCE6
 QT += multimedia-private
 
 PLUGIN_TYPE = audio

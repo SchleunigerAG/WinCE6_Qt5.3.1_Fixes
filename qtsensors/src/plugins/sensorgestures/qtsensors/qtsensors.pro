@@ -1,4 +1,4 @@
-TARGET = qtsensorgestures_plugin
+TARGET = qtsensorgestures_plugin531V3-WCE6
 QT = core sensors
 
 PLUGIN_TYPE = sensorgestures

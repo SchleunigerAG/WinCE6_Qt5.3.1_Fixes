@@ -1,4 +1,4 @@
-TARGET = imx6vivantevideonode
+TARGET = imx6vivantevideonode531V3-WCE6
 QT += multimedia-private qtmultimediaquicktools-private
 
 PLUGIN_TYPE=video/videonode

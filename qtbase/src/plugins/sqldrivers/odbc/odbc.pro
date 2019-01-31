@@ -1,4 +1,4 @@
-TARGET = qsqlodbc
+TARGET = qsqlodbc531V3-WCE6
 
 SOURCES = main.cpp
 OTHER_FILES += odbc.json

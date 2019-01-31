@@ -1,4 +1,4 @@
-TARGET = qdirect2d
+TARGET = qdirect2d531V3-WCE6
 
 PLUGIN_TYPE = platforms
 PLUGIN_CLASS_NAME = QWindowsDirect2DIntegrationPlugin

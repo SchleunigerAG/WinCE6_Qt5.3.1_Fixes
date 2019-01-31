@@ -1,4 +1,4 @@
-TARGET = qtsensors_winrt
+TARGET = qtsensors_winrt531V3-WCE6
 QT = sensors core
 
 PLUGIN_TYPE = sensors

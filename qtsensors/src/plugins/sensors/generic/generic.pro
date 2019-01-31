@@ -1,4 +1,4 @@
-TARGET = qtsensors_generic
+TARGET = qtsensors_generic531V3-WCE6
 QT = core sensors
 
 PLUGIN_TYPE = sensors

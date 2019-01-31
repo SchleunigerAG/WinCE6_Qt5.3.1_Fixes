@@ -1,4 +1,4 @@
-TARGET = qtsensors_simulator
+TARGET = qtsensors_simulator531V3-WCE6
 
 PLUGIN_TYPE = sensors
 PLUGIN_CLASS_NAME = SimulatorSensorPlugin

@@ -1,4 +1,4 @@
-TARGET = qmldbg_qtquick2
+TARGET = qmldbg_qtquick2531V3-WCE6
 QT       += qml-private quick-private core-private gui-private
 
 PLUGIN_TYPE = qmltooling

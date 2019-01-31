@@ -1,4 +1,4 @@
-TARGET = qwinrt
+TARGET = qwinrt531V3-WCE6
 CONFIG -= precompile_header
 
 # For Windows Phone 8 we have to deploy fonts together with the application as DirectWrite

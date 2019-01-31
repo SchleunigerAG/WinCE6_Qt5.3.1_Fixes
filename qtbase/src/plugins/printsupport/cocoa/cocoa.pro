@@ -1,4 +1,4 @@
-TARGET = cocoaprintersupport
+TARGET = cocoaprintersupport531V3-WCE6
 MODULE = cocoaprintersupport
 PLUGIN_TYPE = printsupport
 PLUGIN_CLASS_NAME = QCocoaPrinterSupportPlugin

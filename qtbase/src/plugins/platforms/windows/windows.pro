@@ -1,4 +1,4 @@
-TARGET = qwindows
+TARGET = qwindows531V3-WCE6
 
 PLUGIN_TYPE = platforms
 PLUGIN_CLASS_NAME = QWindowsIntegrationPlugin

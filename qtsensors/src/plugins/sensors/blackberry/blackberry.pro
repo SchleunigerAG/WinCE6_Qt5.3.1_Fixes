@@ -1,4 +1,4 @@
-TARGET = qtsensors_blackberry
+TARGET = qtsensors_blackberry531V3-WCE6
 QT = sensors core
 DEFINES += QT_NO_CAST_FROM_ASCII QT_NO_CAST_TO_ASCII
 

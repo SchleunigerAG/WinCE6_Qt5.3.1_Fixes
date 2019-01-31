@@ -1,4 +1,4 @@
-TARGET = qtposition_blackberry
+TARGET = qtposition_blackberry531V3-WCE6
 QT = core positioning
 
 PLUGIN_TYPE = position

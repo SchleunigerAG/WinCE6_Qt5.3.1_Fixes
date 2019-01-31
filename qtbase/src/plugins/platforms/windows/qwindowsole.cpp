@@ -319,6 +319,8 @@ QWindowsOleEnumFmtEtc::~QWindowsOleEnumFmtEtc()
 {
     LPMALLOC pmalloc;
 
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
     if (CoGetMalloc(MEMCTX_TASK, &pmalloc) == NOERROR) {
         for (int idx = 0; idx < m_lpfmtetcs.count(); ++idx) {
             LPFORMATETC tmpetc = m_lpfmtetcs.at(idx);
@@ -329,6 +331,8 @@ QWindowsOleEnumFmtEtc::~QWindowsOleEnumFmtEtc()
 
         pmalloc->Release();
     }
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
     m_lpfmtetcs.clear();
 }
 
@@ -458,7 +462,11 @@ bool QWindowsOleEnumFmtEtc::copyFormatEtc(LPFORMATETC dest, LPFORMATETC src) con
     if (src->ptd) {
         LPMALLOC pmalloc;
 
+// CHANGES SCHLEUNIGER AG, October 2015 :: START [add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build]
+#ifndef Q_OS_WINCE
         if (CoGetMalloc(MEMCTX_TASK, &pmalloc) != NOERROR)
+#endif
+// CHANGES SCHLEUNIGER AG, October 2015 :: END
             return false;
 
         pmalloc->Alloc(src->ptd->tdSize);

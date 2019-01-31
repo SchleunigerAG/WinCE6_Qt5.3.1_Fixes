@@ -1,4 +1,4 @@
-TARGET = qsqlite2
+TARGET = qsqlite2531V3-WCE6
 
 SOURCES = smain.cpp
 OTHER_FILES += sqlite2.json

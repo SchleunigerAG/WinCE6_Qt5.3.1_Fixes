@@ -1,4 +1,4 @@
-TARGET = qsqloci
+TARGET = qsqloci531V3-WCE6
 
 SOURCES = main.cpp
 OTHER_FILES += oci.json
