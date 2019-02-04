@@ -7,3 +7,13 @@ Summary of the changes done by Schleuniger:
 - add some #ifdef/#ifndef to resolve specific WinCE6 problems for a (not 100% tested) GUI working Qt build
 - add infix for plugin dlls
 - remove tiff from imageformats
+
+All changes in existing files are marked with the following banner:
+
+CHANGES SCHLEUNIGER AG, DATE START
+
+xxx
+
+CHANGES SCHLEUNIGER AG, DATE END
+
+
